@@ -1,10 +1,29 @@
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.scss';
+import LandingPage from './pages/LandingPage/LandingPage';
+import HomePage from './pages/HomePage/HomePage';
+import NotFoundPage from './pages/NotFoundPage/NotFoundPage';
 
 function App() {
   return (
-    <main>
-      <h1 className='text-violet-400 m-5'>Hello, Vite!</h1>
-    </main>
+    <BrowserRouter>
+      <Routes>
+        <Route
+          path='/'
+          element={<LandingPage />}
+        />
+
+        <Route
+          path='/home'
+          element={<HomePage />}
+        />
+
+        <Route
+          path='*'
+          element={<NotFoundPage />}
+        />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
