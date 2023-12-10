@@ -25,7 +25,7 @@ function App() {
             element={
               <>
                 <SignedIn>
-                  <SelectOrganizationPage />
+                  <Dashboard />
                 </SignedIn>
                 <SignedOut>
                   <LandingPage />
@@ -39,7 +39,7 @@ function App() {
             element={
               <>
                 <SignedIn>
-                  <SelectOrganizationPage />
+                  <Dashboard />
                 </SignedIn>
                 <SignedOut>
                   <LoginPage />
@@ -53,7 +53,7 @@ function App() {
             element={
               <>
                 <SignedIn>
-                  <SelectOrganizationPage />
+                  <Dashboard />
                 </SignedIn>
                 <SignedOut>
                   <SignUpPage />

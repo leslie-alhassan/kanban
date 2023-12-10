@@ -1,9 +1,10 @@
 import { Button } from '@/components/ui/button';
 import { Medal } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import styles from './Landing.module.scss';
 import { NavBar } from '@/components/NavBar/NavBar';
 import { Footer } from '@/components/Footer/Footer';
+
+import styles from './Landing.module.scss';
 
 const LandingPage = () => {
   return (
@@ -18,8 +19,8 @@ const LandingPage = () => {
         <div className='flex flex-col items-center justify-center'>
           {/* medallion */}
           <div className='mb-4 flex items-center border shadow-sm p-3 bg-amber-100 text-amber-700 rounded-full uppercase font-semibold text-xs'>
-            <Medal className='h-6 w-6 mr-2' />1 <sup className='mr-1'>ST</sup>
-            PLACE APP IN MY HEART
+            <Medal className='h-6 w-6 mr-2' />1 <sup className='mr-1'>st</sup>
+            place app in my heart
           </div>
 
           {/* hero */}
