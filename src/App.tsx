@@ -1,15 +1,13 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.scss';
 import LandingPage from './pages/LandingPage/LandingPage';
-import HomePage from './pages/HomePage/HomePage';
+
 import NotFoundPage from './pages/NotFoundPage/NotFoundPage';
-import {
-  ClerkProvider,
-  SignedIn,
-  SignedOut,
-  RedirectToSignIn,
-  RedirectToSignUp,
-} from '@clerk/clerk-react';
+import { ClerkProvider, SignedIn, SignedOut } from '@clerk/clerk-react';
+import LoginPage from './pages/LoginPage/LoginPage';
+import SignUpPage from './pages/SignUpPage/SignUpPage';
+import SelectOrganizationPage from './pages/OrganizationsPage/OrganizationsPage';
+import Dashboard from './pages/Dashboard/Dashboard';
 
 const clerkPubKey = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY;
 
@@ -27,24 +25,10 @@ function App() {
             element={
               <>
                 <SignedIn>
-                  <HomePage />
+                  <SelectOrganizationPage />
                 </SignedIn>
                 <SignedOut>
                   <LandingPage />
-                </SignedOut>
-              </>
-            }
-          />
-
-          <Route
-            path='/home'
-            element={
-              <>
-                <SignedIn>
-                  <HomePage />
-                </SignedIn>
-                <SignedOut>
-                  <RedirectToSignIn />
                 </SignedOut>
               </>
             }
@@ -55,10 +39,10 @@ function App() {
             element={
               <>
                 <SignedIn>
-                  <HomePage />
+                  <SelectOrganizationPage />
                 </SignedIn>
                 <SignedOut>
-                  <RedirectToSignIn />
+                  <LoginPage />
                 </SignedOut>
               </>
             }
@@ -69,10 +53,38 @@ function App() {
             element={
               <>
                 <SignedIn>
-                  <HomePage />
+                  <SelectOrganizationPage />
                 </SignedIn>
                 <SignedOut>
-                  <RedirectToSignUp />
+                  <SignUpPage />
+                </SignedOut>
+              </>
+            }
+          />
+
+          <Route
+            path='/organizations'
+            element={
+              <>
+                <SignedIn>
+                  <SelectOrganizationPage />
+                </SignedIn>
+                <SignedOut>
+                  <LoginPage />
+                </SignedOut>
+              </>
+            }
+          />
+
+          <Route
+            path='/organization/:id'
+            element={
+              <>
+                <SignedIn>
+                  <Dashboard />
+                </SignedIn>
+                <SignedOut>
+                  <LoginPage />
                 </SignedOut>
               </>
             }

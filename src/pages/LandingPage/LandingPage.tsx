@@ -18,8 +18,8 @@ const LandingPage = () => {
         <div className='flex flex-col items-center justify-center'>
           {/* medallion */}
           <div className='mb-4 flex items-center border shadow-sm p-3 bg-amber-100 text-amber-700 rounded-full uppercase font-semibold text-xs'>
-            <Medal className='h-6 w-6 mr-2' />
-            NO 1 IN MY HEART
+            <Medal className='h-6 w-6 mr-2' />1 <sup className='mr-1'>ST</sup>
+            PLACE APP IN MY HEART
           </div>
 
           {/* hero */}
@@ -33,12 +33,15 @@ const LandingPage = () => {
           >
             breezily.
           </h1>
+
           {/* pitch */}
           <p className='pitch text-sm md:text-base text-neutral-400 my-4 max-w-xs md:max-w-2xl text-center'>
             Kanban brings all your tasks together so you can reach new
-            productivity peaks - keep tasks in order, deadlines on track and
+            productivity peaks. Keep tasks in order, deadlines on track and
             projects aligned with Kanban.
           </p>
+
+          {/* sign-up */}
           <Button
             size='lg'
             className='mt-4'
