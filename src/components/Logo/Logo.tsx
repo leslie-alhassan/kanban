@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import logo from '../../assets/icons/logo.svg';
 
-const Logo = () => {
+export const Logo = () => {
   return (
     <Link
       to='/'
@@ -17,5 +17,3 @@ const Logo = () => {
     </Link>
   );
 };
-
-export default Logo;
