@@ -12,7 +12,9 @@ interface SidebarProps {
   storageKey: string;
 }
 
-export const Sidebar = ({ storageKey = 'sidebar-state' }: SidebarProps) => {
+export const Sidebar = ({
+  storageKey = 'sidebar-default-state',
+}: SidebarProps) => {
   const [expanded, setExpanded] = useLocalStorage<Record<string, any>>(
     storageKey,
     {}
@@ -21,7 +23,11 @@ export const Sidebar = ({ storageKey = 'sidebar-state' }: SidebarProps) => {
   const { organization: activeOrganization, isLoaded: isLoadedOrg } =
     useOrganization();
 
-  const { userMemberships, isLoaded: isLoadedOrgList } = useOrganizationList({
+  const {
+    userMemberships,
+    isLoaded: isLoadedOrgList,
+    setActive,
+  } = useOrganizationList({
     userMemberships: { infinite: true },
   });
 
@@ -62,7 +68,6 @@ export const Sidebar = ({ storageKey = 'sidebar-state' }: SidebarProps) => {
         </Button>
       </div>
 
-      {/* @ts-ignore */}
       <Accordion
         type='multiple'
         defaultValue={defaultAccordionValue}
@@ -72,6 +77,7 @@ export const Sidebar = ({ storageKey = 'sidebar-state' }: SidebarProps) => {
           <SidebarCard
             key={organization.id}
             isActive={activeOrganization?.id === organization.id}
+            onSetActive={setActive}
             isExpanded={expanded[organization.id]}
             organization={organization as Organization}
             onExpand={onExpand}

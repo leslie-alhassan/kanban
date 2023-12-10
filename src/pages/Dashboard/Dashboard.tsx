@@ -9,7 +9,7 @@ const Dashboard = () => {
       <main className='pt-20 md:pt-24 px-20 mx-auto'>
         <div className='flex gap-x-7 items-center md:max-w-screen-2xl mx-auto'>
           <div className='w-64 shrink-0 hidden md:block'>
-            <Sidebar storageKey='side' />
+            <Sidebar storageKey='sidebar-default-state' />
           </div>
         </div>
       </main>

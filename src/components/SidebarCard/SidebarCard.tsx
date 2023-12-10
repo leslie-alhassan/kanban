@@ -6,8 +6,9 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from '../ui/accordion';
-import { Activity, CreditCard, Layout, Settings } from 'lucide-react';
+import { Activity, Layout, Settings } from 'lucide-react';
 import { Button } from '../ui/button';
+import { useEffect } from 'react';
 
 export interface Organization {
   id: string;
@@ -21,6 +22,7 @@ interface SidebarCardProps {
   isActive: boolean;
   organization: Organization;
   onExpand: (id: string) => void;
+  onSetActive: (arg0: { organization: string }) => void;
 }
 
 export const SidebarCard = ({
@@ -28,6 +30,7 @@ export const SidebarCard = ({
   isActive,
   organization,
   onExpand,
+  onSetActive,
 }: SidebarCardProps) => {
   const location = useLocation();
 
@@ -51,13 +54,27 @@ export const SidebarCard = ({
 
   const navigate = useNavigate();
 
+  // set active org
+  useEffect(() => {
+    const setActive = () => {
+      onSetActive({
+        organization: location.pathname.split('/organization/')[1],
+      });
+    };
+
+    setActive();
+  }, [location.pathname]);
+
   return (
     <AccordionItem
       value={organization.id}
       className='border-none'
     >
       <AccordionTrigger
-        onClick={() => onExpand(organization.id)}
+        onClick={() => {
+          onExpand(organization.id);
+          navigate(`/organization/${organization.id}`);
+        }}
         className={cn(
           'flex items-center gap-x-2 p-1.5 text-neutral-700 rounded-md hover:bg-neutral-500/10 transition text-start no-underline hover:no-underline',
           isActive && !isExpanded && 'bg-indigo-500/10 text-indigo-700'
@@ -81,7 +98,9 @@ export const SidebarCard = ({
             key={route.href}
             variant='ghost'
             size='sm'
-            onClick={() => navigate(route.href)}
+            onClick={() => {
+              navigate(route.href);
+            }}
             className={cn(
               'w-full font-normal justify-start pl-10 mb-1',
               location.pathname === route.href &&
