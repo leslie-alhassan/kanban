@@ -54,7 +54,6 @@ export const FormPopover = ({
       board: title,
       id: uuid(),
       organization_id: orgId ? orgId : '',
-      isActive: false,
       imageUrl: imageUrl,
       columns: [],
     };
