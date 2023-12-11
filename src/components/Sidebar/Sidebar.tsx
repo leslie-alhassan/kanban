@@ -3,17 +3,22 @@ import { Plus } from 'lucide-react';
 import { useLocalStorage } from 'usehooks-ts';
 import { useOrganization, useOrganizationList } from '@clerk/clerk-react';
 
-import { Skeleton } from '../ui/skeleton';
 import { Button } from '../ui/button';
 import { Accordion } from '../ui/accordion';
 import { SidebarCard, Organization } from '../SidebarCard/SidebarCard';
 
 interface SidebarProps {
   storageKey: string;
+  onSetViewBoard: (arg0: boolean) => void;
+  onSetViewActivity: (arg0: boolean) => void;
+  onSetViewSettings: (arg0: boolean) => void;
 }
 
 export const Sidebar = ({
   storageKey = 'sidebar-default-state',
+  onSetViewBoard,
+  onSetViewActivity,
+  onSetViewSettings,
 }: SidebarProps) => {
   const [expanded, setExpanded] = useLocalStorage<Record<string, any>>(
     storageKey,
@@ -50,7 +55,28 @@ export const Sidebar = ({
   };
 
   if (!isLoadedOrg || !isLoadedOrgList || userMemberships.isLoading) {
-    return <Skeleton />;
+    return (
+      <>
+        <div className='font-medium text-xs flex items-center mb-1'>
+          <h1 className='font-semibold uppercase'>Workspaces</h1>
+          <Button
+            size='icon'
+            variant='ghost'
+            className='ml-auto'
+          >
+            <Link to='/organizations'>
+              <Plus className='h-4 w-4' />
+            </Link>
+          </Button>
+        </div>
+
+        <div className='space-y-2'>
+          <SidebarCard.Skeleton />
+          <SidebarCard.Skeleton />
+          <SidebarCard.Skeleton />
+        </div>
+      </>
+    );
   }
 
   return (
@@ -81,6 +107,9 @@ export const Sidebar = ({
             isExpanded={expanded[organization.id]}
             organization={organization as Organization}
             onExpand={onExpand}
+            onSetViewBoard={onSetViewBoard}
+            onSetViewActivity={onSetViewActivity}
+            onSetViewSettings={onSetViewSettings}
           />
         ))}
       </Accordion>

@@ -1,13 +1,16 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { ClerkProvider, SignedIn, SignedOut } from '@clerk/clerk-react';
+import { Toaster } from 'sonner';
+
 import './App.scss';
 import LandingPage from './pages/LandingPage/LandingPage';
 
 import NotFoundPage from './pages/NotFoundPage/NotFoundPage';
-import { ClerkProvider, SignedIn, SignedOut } from '@clerk/clerk-react';
 import LoginPage from './pages/LoginPage/LoginPage';
 import SignUpPage from './pages/SignUpPage/SignUpPage';
 import SelectOrganizationPage from './pages/OrganizationsPage/OrganizationsPage';
 import Dashboard from './pages/Dashboard/Dashboard';
+import BoardPage from './pages/BoardPage/BoardPage';
 
 const clerkPubKey = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY;
 
@@ -18,6 +21,7 @@ if (!clerkPubKey) {
 function App() {
   return (
     <ClerkProvider publishableKey={clerkPubKey}>
+      <Toaster />
       <BrowserRouter>
         <Routes>
           <Route
@@ -82,6 +86,20 @@ function App() {
               <>
                 <SignedIn>
                   <Dashboard />
+                </SignedIn>
+                <SignedOut>
+                  <LoginPage />
+                </SignedOut>
+              </>
+            }
+          />
+
+          <Route
+            path='/board/:id'
+            element={
+              <>
+                <SignedIn>
+                  <BoardPage />
                 </SignedIn>
                 <SignedOut>
                   <LoginPage />

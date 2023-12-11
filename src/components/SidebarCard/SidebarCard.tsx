@@ -1,5 +1,6 @@
 import { cn } from '@/lib/utils';
 import { useNavigate, useLocation } from 'react-router-dom';
+import { useEffect, useState } from 'react';
 
 import {
   AccordionContent,
@@ -8,7 +9,7 @@ import {
 } from '../ui/accordion';
 import { Activity, Layout, Settings } from 'lucide-react';
 import { Button } from '../ui/button';
-import { useEffect } from 'react';
+import { Skeleton } from '../ui/skeleton';
 
 export interface Organization {
   id: string;
@@ -23,36 +24,40 @@ interface SidebarCardProps {
   organization: Organization;
   onExpand: (id: string) => void;
   onSetActive: (arg0: { organization: string }) => void;
+  onSetViewBoard: (arg0: boolean) => void;
+  onSetViewActivity: (arg0: boolean) => void;
+  onSetViewSettings: (arg0: boolean) => void;
 }
 
 export const SidebarCard = ({
-  isExpanded,
   isActive,
   organization,
   onExpand,
   onSetActive,
+  onSetViewBoard,
+  onSetViewActivity,
+  onSetViewSettings,
 }: SidebarCardProps) => {
   const location = useLocation();
+  const navigate = useNavigate();
 
   const routes = [
     {
       label: 'Boards',
-      icon: <Layout className='h-4 w04 mr-2' />,
-      href: `/organization/${organization.id}`,
+      icon: <Layout className='h-4 w-4 mr-2' />,
+      key: `${organization.id}/boards`,
     },
     {
       label: 'Activity',
       icon: <Activity className='h-4 w04 mr-2' />,
-      href: `/organization/${organization.id}/activity`,
+      key: `${organization.id}/activity`,
     },
     {
       label: 'Settings',
       icon: <Settings className='h-4 w04 mr-2' />,
-      href: `/organization/${organization.id}/settings`,
+      key: `${organization.id}/settings`,
     },
   ];
-
-  const navigate = useNavigate();
 
   // set active org
   useEffect(() => {
@@ -64,6 +69,28 @@ export const SidebarCard = ({
 
     setActive();
   }, [location.pathname]);
+
+  const [currSelected, setCurrSelected] = useState('');
+
+  const handleSidebarIconClick = (path: string) => {
+    path.includes(location.pathname.split('/organization')[1]);
+
+    setCurrSelected(path);
+
+    if (path.includes('boards')) {
+      onSetViewBoard(true);
+      onSetViewActivity(false);
+      onSetViewSettings(false);
+    } else if (path.includes('activity')) {
+      onSetViewActivity(true);
+      onSetViewBoard(false);
+      onSetViewSettings(false);
+    } else if (path.includes('settings')) {
+      onSetViewSettings(true);
+      onSetViewBoard(false);
+      onSetViewActivity(false);
+    }
+  };
 
   return (
     <AccordionItem
@@ -77,7 +104,7 @@ export const SidebarCard = ({
         }}
         className={cn(
           'flex items-center gap-x-2 p-1.5 text-neutral-700 rounded-md hover:bg-neutral-500/10 transition text-start no-underline hover:no-underline',
-          isActive && !isExpanded && 'bg-indigo-500/10 text-indigo-700'
+          isActive && 'bg-indigo-500/10 text-indigo-700'
         )}
       >
         <div className='flex items-center gap-x-2'>
@@ -92,18 +119,22 @@ export const SidebarCard = ({
         </div>
       </AccordionTrigger>
 
-      <AccordionContent className='pt-1 text-neutral-700'>
+      <AccordionContent
+        className='pt-1 text-neutral-700'
+        onClick={() => navigate(`/organization/${organization.id}`)}
+      >
         {routes.map((route) => (
           <Button
-            key={route.href}
+            key={route.key}
             variant='ghost'
             size='sm'
-            onClick={() => {
-              navigate(route.href);
-            }}
+            onClick={() => handleSidebarIconClick(route.key)}
             className={cn(
               'w-full font-normal justify-start pl-10 mb-1',
-              location.pathname === route.href &&
+              currSelected === route.key &&
+                route.key.includes(
+                  location.pathname.split('/organization/')[1]
+                ) &&
                 'bg-indigo-600/10 text-indigo-700'
             )}
           >
@@ -113,5 +144,13 @@ export const SidebarCard = ({
         ))}
       </AccordionContent>
     </AccordionItem>
+  );
+};
+
+SidebarCard.Skeleton = function SkeletonSidebarCard() {
+  return (
+    <div className='flex items-center gap-x-2'>
+      <Skeleton className='h-10 w-full' />
+    </div>
   );
 };

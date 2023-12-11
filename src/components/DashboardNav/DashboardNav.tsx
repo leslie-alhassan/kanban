@@ -6,7 +6,7 @@ import { MobileSidebar } from '../MobileSidebar/MobileSidebar';
 
 export const DashboardNav = () => {
   return (
-    <nav className='fixed z-50 top-0 w-full h-16 border-bottom shadow-sm bg-white flex items-center px-20 2xl mx-auto'>
+    <nav className='fixed z-50 top-0 w-full h-16 border-bottom shadow-sm bg-white flex items-center px-6 md:px-20 2xl mx-auto'>
       {/* Mobile Sidebar */}
       <MobileSidebar />
 
