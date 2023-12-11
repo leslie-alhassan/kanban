@@ -4,6 +4,7 @@
     "id": "a5f18ad0-5155-4071-b00a-28e5efbf5f8f",
     "organization_id": "org_2ZL7xl9OLvmg9hJss0cpImCL8FS",
     "imageUrl": "https://images.unsplash.com/photo-1507783548227-544c3b8fc065?ixid=M3w1MjY4NzN8MHwxfHJhbmRvbXx8fHx8fHx8fDE2OTk2OTcyNDN8\u0026ixlib=rb-4.0.3",
+    "isActive": false,
     "columns": [
       {
         "column": "Done",
@@ -93,6 +94,7 @@
     "board": "Project 2",
     "id": "29029799-bced-42a9-bd73-3cee8b3c6245",
     "organization_id": "org_2ZKmN5dK5oGpvepGS5NyGfTQ2wg",
+    "isActive": true,
     "imageUrl": "https://images.unsplash.com/photo-1555769571-2ca68b9197cb?ixid=M3w1MjY4NzN8MHwxfHJhbmRvbXx8fHx8fHx8fDE2OTk2OTcyNDN8\u0026ixlib=rb-4.0.3",
     "columns": [
       {
@@ -342,6 +344,7 @@
     "board": "Project 3",
     "id": "ed1f6b40-fca8-435f-b3e9-e0176d7a69c3",
     "organization_id": "org_2ZKmN5dK5oGpvepGS5NyGfTQ2wg",
+    "isActive": true,
     "imageUrl": "https://images.unsplash.com/photo-1557600280-9ceddf1a3cc3?ixid=M3w1MjY4NzN8MHwxfHJhbmRvbXx8fHx8fHx8fDE2OTk2OTcyNDN8\u0026ixlib=rb-4.0.3",
     "columns": [
       { "column": "Backlog", "tasks": [] },
@@ -651,6 +654,7 @@
     "board": "Project 4",
     "id": "11ca3454-4a48-49e3-84a7-817b3c51acee",
     "organization_id": "org_2ZKlslWBGz1qgkFqanyiES2Ufno",
+    "isActive": true,
     "imageUrl": "https://images.unsplash.com/photo-1617791160505-6f00504e3519?ixid=M3w1MjY4NzN8MHwxfHJhbmRvbXx8fHx8fHx8fDE2OTk2OTcyNDN8\u0026ixlib=rb-4.0.3",
     "columns": [
       { "column": "In Progress", "tasks": [] },
@@ -1006,6 +1010,7 @@
     "board": "Project 5",
     "id": "131e186d-6a81-4ee7-b85e-ceb3662caf75",
     "organization_id": "org_2ZL7xl9OLvmg9hJss0cpImCL8FS",
+    "isActive": false,
     "columns": [
       {
         "column": "Done",
