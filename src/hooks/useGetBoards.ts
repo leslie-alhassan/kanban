@@ -17,9 +17,9 @@ export interface Board {
   }[];
 }
 
-export const useGetBoards = (org_id: string | undefined): Board[] => {
+export const useGetBoards = (id: string | undefined): Board[] => {
   const boards = boardData.filter((board) => {
-    return board.organization_id === org_id;
+    return board.organization_id === id || board.id == id;
   });
 
   return boards;

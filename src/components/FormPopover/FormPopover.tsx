@@ -2,20 +2,17 @@ import {
   PopoverClose,
   PopoverContent,
   PopoverTrigger,
-} from '@radix-ui/react-popover';
+} from '@/components/ui/popover';
 import { Popover } from '../ui/popover';
 import { Button } from '../ui/button';
 import { AlertCircle, X } from 'lucide-react';
+import { UnsplashPicker } from '../UnsplashPicker/UnsplashPicker';
 
 import { ElementRef, useEffect, useRef, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import { toast } from 'sonner';
 
-import boardData from '../../data/data.json';
-
-// @ts-ignore
 import { v4 as uuid } from 'uuid';
-import { UnsplashPicker } from '../UnsplashPicker/UnsplashPicker';
 
 interface FormPopoverProps {
   children: React.ReactNode;
@@ -52,7 +49,7 @@ export const FormPopover = ({
       return setError('Please provide a board title');
     }
 
-    // handle read and write then redirect
+    // TODO: handle read and write then redirect
     const newBoard = {
       board: title,
       id: uuid(),
@@ -61,8 +58,6 @@ export const FormPopover = ({
       imageUrl: imageUrl,
       columns: [],
     };
-
-    boardData.push(newBoard);
 
     setError('');
     toast.success('Board created');
@@ -76,7 +71,6 @@ export const FormPopover = ({
         align={align}
         side={side}
         sideOffset={sideOffset}
-        className='w-80 pt-3 rounded shadow-lg p-4'
       >
         <div className='text-sm font-medium text-center text-neutral-600'>
           Create board

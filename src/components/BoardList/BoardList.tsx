@@ -66,7 +66,7 @@ export const BoardList = () => {
               className='group relative aspect-video bg-no-repeat bg-center bg-cover bg-gray-100 rounded-sm h-full w-full p-2 overflow-hidden'
             >
               <div className='absolute inset-0 bg-black/30 group-hover:hb-black/40 transition'>
-                <p className='relative font-semibold text-white px-2'>
+                <p className='relative font-semibold text-white p-2'>
                   {board.board}
                 </p>
               </div>
