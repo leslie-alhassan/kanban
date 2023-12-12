@@ -6,12 +6,13 @@ interface BoardColumnItemProps {
     description: string;
     status: string;
     due_date: string;
+    task_id: string;
   };
 }
 
 export const BoardColumnItem = ({ task }: BoardColumnItemProps) => {
   return (
-    <li className='shrink-0  w-full select-none text-[0.75rem]'>
+    <li className='shrink-0  w-full select-none text-[0.75rem] cursor-pointer'>
       <div className='w-full rounded-sm bg-white shadow-sm p-3 truncate border-2 border-transparent hover:border-indigo-600/50'>
         <h2 className='font-semibold text-sm'>{task.title}</h2>
 
@@ -37,9 +38,6 @@ export const BoardColumnItem = ({ task }: BoardColumnItemProps) => {
                 task.status === 'done' && 'bg-emerald-500'
               )}
             ></div>
-            {/* <p className='text-muted-foreground italic text-[0.6rem]'>
-              {task.status}
-            </p> */}
           </div>
         </div>
       </div>

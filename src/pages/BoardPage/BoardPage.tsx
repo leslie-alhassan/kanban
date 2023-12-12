@@ -1,6 +1,6 @@
 import { BoardColumn } from '@/components/BoardColumn/BoardColumn';
 import { DashboardNav } from '@/components/DashboardNav/DashboardNav';
-import { Board, Task, useGetBoards } from '@/hooks/useGetBoards';
+import { Task, useGetBoards } from '@/hooks/useGetBoards';
 import { Column } from '@/hooks/Board';
 import { Plus } from 'lucide-react';
 
@@ -27,7 +27,6 @@ const BoardPage = () => {
 
   const [columns, setColumns] = useState<Column[]>(board.columns);
   const [columnIds, setColumnIds] = useState<string[]>([]);
-  const [tasks, setTasks] = useState<Task[]>([]);
   const [activeColumn, setActiveColumn] = useState<Column | null>(null);
 
   // activation sensor for drag over event to prevent disabling of deletion of columns
@@ -67,10 +66,6 @@ const BoardPage = () => {
   const handleAddTask = (columnId: string) => {
     const column = columns.find((column) => {
       return column.column_id === columnId;
-    });
-
-    const colIndex = columns.findIndex((col) => {
-      return col.column_id === columnId;
     });
 
     const newTask: Task = {

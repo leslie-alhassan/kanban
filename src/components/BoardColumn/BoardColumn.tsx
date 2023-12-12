@@ -39,7 +39,7 @@ export const BoardColumn = ({
       <div
         ref={setNodeRef}
         style={style}
-        className='w-[20.25rem] h-[30rem] max-h-[70vh] rounded-sm  shadow-md px-[1rem] py-4 overflow-auto border-2 border-indigo-600/50'
+        className='w-[20.25rem] h-[30rem] max-h-[70vh] rounded-sm  shadow-md px-[1rem] py-4 overflow-auto border-2 border-[#2E66E5]'
       ></div>
     );
   }
@@ -51,7 +51,7 @@ export const BoardColumn = ({
       className='w-[20.25rem] min-w-[20.25rem] h-fit max-h-[70vh] rounded-sm bg-[#f1f2f4] shadow-md px-[1rem] py-4 overflow-auto'
     >
       <div
-        className='flex justify-between items-baseline'
+        className='flex justify-between items-baseline cursor-grab'
         {...attributes}
         {...listeners}
       >
