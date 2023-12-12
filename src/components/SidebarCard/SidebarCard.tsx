@@ -1,5 +1,5 @@
 import { cn } from '@/lib/utils';
-import { useNavigate, useLocation } from 'react-router-dom';
+import { useNavigate, useLocation, useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 
 import {
@@ -39,6 +39,7 @@ export const SidebarCard = ({
   onSetViewSettings,
 }: SidebarCardProps) => {
   const location = useLocation();
+  const { id } = useParams();
   const navigate = useNavigate();
 
   const routes = [

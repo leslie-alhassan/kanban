@@ -4,11 +4,13 @@ import { useOrganization } from '@clerk/clerk-react';
 import { BadgePlus, User2 } from 'lucide-react';
 import { Skeleton } from '../ui/skeleton';
 import { FormPopover } from '../FormPopover/FormPopover';
-import { Board, useGetBoards } from '@/hooks/useGetBoards';
+import { useGetBoards } from '@/hooks/useGetBoards';
+import { Board } from '@/hooks/Board';
 import { Link } from 'react-router-dom';
+import { cn } from '@/lib/utils';
 
 export const BoardList = () => {
-  const [boards, setBoards] = useState<Board[]>();
+  const [boards, setBoards] = useState<Board[]>([]);
 
   const { organization, isLoaded } = useOrganization();
 
@@ -63,10 +65,17 @@ export const BoardList = () => {
               to={`/board/${board.id}`}
               key={board.id}
               style={{ backgroundImage: `url(${board.imageUrl})` }}
-              className='group relative aspect-video bg-no-repeat bg-center bg-cover bg-gray-100 rounded-sm h-full w-full p-2 overflow-hidden'
+              className={
+                'group relative aspect-video bg-no-repeat bg-center bg-cover bg-gray-100 rounded-sm h-full w-full p-2 overflow-hidden'
+              }
             >
-              <div className='absolute inset-0 bg-black/30 group-hover:hb-black/40 transition'>
-                <p className='relative font-semibold text-white p-2'>
+              <div className='absolute inset-0 group-hover:hb-black/40 transition'>
+                <p
+                  className={cn(
+                    'relative font-semibold text-muted-foreground p-2',
+                    board.imageUrl && 'text-white'
+                  )}
+                >
                   {board.board}
                 </p>
               </div>

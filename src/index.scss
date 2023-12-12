@@ -34,6 +34,7 @@
     --ring: 0 0% 3.9%;
 
     --radius: 0.5rem;
+    overflow: hidden;
   }
 
   .dark {
@@ -79,4 +80,14 @@
   html {
     font-family: Poppins, sans-serif;
   }
+}
+
+::-webkit-scrollbar {
+  width: .5rem;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: hsla(243, 75%, 59%, 25%);
+  border-radius: .5rem;
 }

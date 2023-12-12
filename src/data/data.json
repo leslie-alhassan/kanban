@@ -7,84 +7,70 @@
     "isActive": false,
     "columns": [
       {
-        "column": "Done",
+        "column": "Backlog",
+        "column_id": "3bce84e2-0542-413b-9d55-cc829d840ca6",
         "tasks": [
           {
             "title": "Honorable",
             "description": "Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus. Suspendisse potenti.",
             "status": "pending",
-            "due_date": "12/12/2023"
+            "due_date": "12/12/2023",
+            "task_id": "ba844c77-8f7f-499e-9043-5eadf8968690"
           },
           {
             "title": "Mr",
             "description": "Suspendisse accumsan tortor quis turpis.",
             "status": "doing",
-            "due_date": "12/12/2023"
+            "due_date": "12/12/2023",
+            "task_id": "3d25a72f-4f21-46e9-b11c-c9353d651042"
           },
           {
             "title": "Dr",
             "description": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis. Duis consequat dui nec nisi volutpat eleifend.",
             "status": "doing",
-            "due_date": "12/12/2023"
+            "due_date": "12/12/2023",
+            "task_id": "f294b9a5-ef82-4283-a25d-5ef653fa2328"
           }
         ]
       },
       {
-        "column": "Backlog",
+        "column": "In Progress",
+        "column_id": "15634e19-19c9-4c27-822b-a0bde59fcfb9",
         "tasks": [
           {
             "title": "Rev",
             "description": "Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla.",
             "status": "doing",
-            "due_date": "12/12/2023"
+            "due_date": "12/12/2023",
+            "task_id": "1b66710e-8fe3-4ca5-b7e2-d63a03d4b851"
           },
           {
             "title": "Mrs",
             "description": "Morbi non quam nec dui luctus rutrum. Nulla tellus. In sagittis dui vel nisl. Duis ac nibh.",
             "status": "pending",
-            "due_date": "12/12/2023"
+            "due_date": "12/12/2023",
+            "task_id": "b136e894-e4c2-4df3-b5d4-7c1b9298dee0"
           },
           {
             "title": "Mrs",
             "description": "Ut tellus. Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi. Cras non velit nec nisi vulputate nonummy.",
             "status": "doing",
-            "due_date": "12/12/2023"
+            "due_date": "12/12/2023",
+            "task_id": "8a2f5318-03b0-4720-8b0a-5411a7bc74f5"
           },
           {
             "title": "Mrs",
             "description": "In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl. Aenean lectus.",
             "status": "done",
-            "due_date": "12/12/2023"
+            "due_date": "12/12/2023",
+            "task_id": "29967728-4ff5-4cd7-8cb9-59640d507e4a"
           },
           {
             "title": "Rev",
             "description": "Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui. Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti. Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris. Morbi non lectus.",
             "status": "doing",
-            "due_date": "12/12/2023"
-          },
-          {
-            "title": "Ms",
-            "description": "Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque. Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.",
-            "status": "pending",
-            "due_date": "12/12/2023"
-          },
-          {
-            "title": "Honorable",
-            "description": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque. Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus. In sagittis dui vel nisl.",
-            "status": "pending",
-            "due_date": "12/12/2023"
-          },
-          {
-            "title": "Mr",
-            "description": "Integer non velit. Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque. Duis bibendum. Morbi non quam nec dui luctus rutrum.",
-            "status": "pending",
-            "due_date": "12/12/2023"
-          },
-          {
-            "title": "Ms",
-            "description": "Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem. Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo.",
-            "status": "pending",
-            "due_date": "12/12/2023"
+            "due_date": "12/12/2023",
+            "task_id": "1428c080-474d-4c67-85c7-1ff0e3e58fc4"
           }
         ]
       }
@@ -98,173 +84,159 @@
     "imageUrl": "https://images.unsplash.com/photo-1555769571-2ca68b9197cb?ixid=M3w1MjY4NzN8MHwxfHJhbmRvbXx8fHx8fHx8fDE2OTk2OTcyNDN8\u0026ixlib=rb-4.0.3",
     "columns": [
       {
-        "column": "In Progress",
+        "column": "Backlog",
+        "column_id": "06d57e89-05a7-4783-98d3-dc3b1a6b3091",
         "tasks": [
           {
             "title": "Honorable",
             "description": "Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.",
             "status": "done",
-            "due_date": "12/12/2023"
+            "due_date": "12/12/2023",
+            "task_id": "a218bc62-d4d6-4ca3-8a91-ef93e0f44598"
           },
           {
             "title": "Mrs",
             "description": "Vivamus in felis eu sapien cursus vestibulum. Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem. Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit. Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi.",
             "status": "done",
-            "due_date": "12/12/2023"
+            "due_date": "12/12/2023",
+            "task_id": "131ecb63-1e35-4847-9af7-cb35cc484b63"
           },
           {
             "title": "Mrs",
             "description": "Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.",
             "status": "pending",
-            "due_date": "12/12/2023"
+            "due_date": "12/12/2023",
+            "task_id": "98881768-70fd-4306-b4f5-595f3b695b9f"
           },
           {
             "title": "Honorable",
             "description": "Integer ac neque. Duis bibendum.",
             "status": "done",
-            "due_date": "12/12/2023"
-          },
-          {
-            "title": "Dr",
-            "description": "Nulla suscipit ligula in lacus.",
-            "status": "pending",
-            "due_date": "12/12/2023"
+            "due_date": "12/12/2023",
+            "task_id": "12bb42b2-1135-4baf-8ad6-d54493c71399"
           }
         ]
       },
       {
-        "column": "In Progress",
+        "column": "Not Started",
+        "column_id": "826205fe-3315-48c0-bf8c-875d06f454ad",
         "tasks": [
           {
             "title": "Honorable",
             "description": "Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh. In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet. Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.",
             "status": "pending",
-            "due_date": "12/12/2023"
+            "due_date": "12/12/2023",
+            "task_id": "296a94f7-689f-4f38-a763-5062e5b64169"
           },
           {
             "title": "Mrs",
             "description": "Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est. Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum. Proin eu mi.",
             "status": "pending",
-            "due_date": "12/12/2023"
+            "due_date": "12/12/2023",
+            "task_id": "a8348fcc-26c0-44d7-a9d9-ebbe6247cb86"
           },
           {
             "title": "Ms",
             "description": "Aenean auctor gravida sem.",
             "status": "pending",
-            "due_date": "12/12/2023"
+            "due_date": "12/12/2023",
+            "task_id": "f5f279b2-36c1-4b12-8963-b8d761c84186"
           },
           {
             "title": "Mrs",
             "description": "Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem. Fusce consequat. Nulla nisl. Nunc nisl. Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum. In hac habitasse platea dictumst.",
             "status": "doing",
-            "due_date": "12/12/2023"
+            "due_date": "12/12/2023",
+            "task_id": "427fdcbf-f0f4-4b33-8eb3-d9503ec735dc"
           },
           {
             "title": "Honorable",
             "description": "Phasellus in felis. Donec semper sapien a libero. Nam dui. Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius. Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi. Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla.",
             "status": "pending",
-            "due_date": "12/12/2023"
+            "due_date": "12/12/2023",
+            "task_id": "8bb412cc-6a21-4c9d-8f84-a0e51c8251f1"
           },
           {
             "title": "Ms",
             "description": "Duis mattis egestas metus. Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh. Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros. Vestibulum ac est lacinia nisi venenatis tristique.",
             "status": "doing",
-            "due_date": "12/12/2023"
+            "due_date": "12/12/2023",
+            "task_id": "7e09b98a-2110-4348-b753-45b8f8d4c2ed"
           },
           {
             "title": "Ms",
             "description": "Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat. In congue. Etiam justo. Etiam pretium iaculis justo. In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.",
             "status": "pending",
-            "due_date": "12/12/2023"
-          },
-          {
-            "title": "Mrs",
-            "description": "Aliquam non mauris. Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis. Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.",
-            "status": "pending",
-            "due_date": "12/12/2023"
-          },
-          {
-            "title": "Dr",
-            "description": "Etiam pretium iaculis justo. In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus. Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi. Cras non velit nec nisi vulputate nonummy.",
-            "status": "done",
-            "due_date": "12/12/2023"
-          },
-          {
-            "title": "Dr",
-            "description": "Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat. Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.",
-            "status": "doing",
-            "due_date": "12/12/2023"
+            "due_date": "12/12/2023",
+            "task_id": "bc9f68af-0977-49f7-90d4-d62c845b5b64"
           }
         ]
       },
-      { "column": "Backlog", "tasks": [] },
       {
-        "column": "Done",
+        "column": "In Progress",
+        "column_id": "72360bcd-e969-4a3a-96bc-92ce1f09d8f3",
         "tasks": [
           {
             "title": "Mrs",
             "description": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti. Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris. Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet.",
             "status": "pending",
-            "due_date": "12/12/2023"
+            "due_date": "12/12/2023",
+            "task_id": "9763a12e-eb3f-4ee2-bb1f-3304c7a436a5"
           },
           {
             "title": "Rev",
             "description": "In eleifend quam a odio. In hac habitasse platea dictumst.",
             "status": "pending",
-            "due_date": "12/12/2023"
+            "due_date": "12/12/2023",
+            "task_id": "0d5e1400-5de8-4ca6-8729-e7ba5a0112fa"
           },
           {
             "title": "Honorable",
             "description": "Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui. Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam.",
             "status": "doing",
-            "due_date": "12/12/2023"
+            "due_date": "12/12/2023",
+            "task_id": "e1c95cbf-20b6-4efc-9017-193cf99b29f0"
           },
           {
             "title": "Mr",
             "description": "Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus. Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero. Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh. In quis justo.",
             "status": "pending",
-            "due_date": "12/12/2023"
+            "due_date": "12/12/2023",
+            "task_id": "58e8f4bc-e4ea-41d6-82ed-2a38556bf47d"
           },
           {
             "title": "Honorable",
             "description": "Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit. Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque. Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus. In sagittis dui vel nisl.",
             "status": "done",
-            "due_date": "12/12/2023"
+            "due_date": "12/12/2023",
+            "task_id": "0a590bf5-23c0-491f-ae29-a57319ac175f"
           },
           {
             "title": "Mrs",
             "description": "Duis mattis egestas metus. Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.",
             "status": "pending",
-            "due_date": "12/12/2023"
+            "due_date": "12/12/2023",
+            "task_id": "4b0f7eef-2862-47af-9d46-a607f7381206"
           },
           {
             "title": "Rev",
             "description": "Cras in purus eu magna vulputate luctus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.",
             "status": "pending",
-            "due_date": "12/12/2023"
+            "due_date": "12/12/2023",
+            "task_id": "f335ae40-a0df-4a7f-bcf8-af4e5a20091c"
           },
           {
             "title": "Honorable",
             "description": "In hac habitasse platea dictumst.",
             "status": "doing",
-            "due_date": "12/12/2023"
-          },
-          {
-            "title": "Honorable",
-            "description": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem. Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio. Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo.",
-            "status": "doing",
-            "due_date": "12/12/2023"
-          },
-          {
-            "title": "Mr",
-            "description": "Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat. In congue. Etiam justo. Etiam pretium iaculis justo. In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.",
-            "status": "pending",
-            "due_date": "12/12/2023"
+            "due_date": "12/12/2023",
+            "task_id": "869f0d62-65af-46f5-8ae7-791432dec562"
           }
         ]
       },
       {
-        "column": "Done",
+        "column": "In Review",
+        "column_id": "803da8ec-51f1-437d-82db-b07293747c32",
         "tasks": [
           {
             "title": "Rev",
@@ -282,6 +254,7 @@
       },
       {
         "column": "Done",
+        "column_id": "229a0526-8f77-454d-822b-856018547db9",
         "tasks": [
           {
             "title": "Honorable",
@@ -296,47 +269,6 @@
             "due_date": "12/12/2023"
           }
         ]
-      },
-      {
-        "column": "In Progress",
-        "tasks": [
-          {
-            "title": "Dr",
-            "description": "Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede. Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.",
-            "status": "pending",
-            "due_date": "12/12/2023"
-          },
-          {
-            "title": "Honorable",
-            "description": "Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat. Curabitur gravida nisi at nibh.",
-            "status": "pending",
-            "due_date": "12/12/2023"
-          },
-          {
-            "title": "Honorable",
-            "description": "Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.",
-            "status": "done",
-            "due_date": "12/12/2023"
-          },
-          {
-            "title": "Rev",
-            "description": "Aenean sit amet justo. Morbi ut odio. Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl. Aenean lectus.",
-            "status": "done",
-            "due_date": "12/12/2023"
-          },
-          {
-            "title": "Dr",
-            "description": "Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat. Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede. Morbi porttitor lorem id ligula.",
-            "status": "done",
-            "due_date": "12/12/2023"
-          },
-          {
-            "title": "Honorable",
-            "description": "Morbi vel lectus in quam fringilla rhoncus. Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero. Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.",
-            "status": "pending",
-            "due_date": "12/12/2023"
-          }
-        ]
       }
     ]
   },
@@ -347,307 +279,134 @@
     "isActive": true,
     "imageUrl": "https://images.unsplash.com/photo-1557600280-9ceddf1a3cc3?ixid=M3w1MjY4NzN8MHwxfHJhbmRvbXx8fHx8fHx8fDE2OTk2OTcyNDN8\u0026ixlib=rb-4.0.3",
     "columns": [
-      { "column": "Backlog", "tasks": [] },
       {
-        "column": "Done",
+        "column": "Yesterday",
+        "column_id": "8d1b2647-5d46-4c2e-9689-3b9a0f222b5a",
+        "tasks": []
+      },
+      {
+        "column": "Today",
+        "column_id": "a97c7a4c-f893-42e8-994c-86b19c52b43e",
         "tasks": [
           {
             "title": "Dr",
             "description": "Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede. Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus.",
             "status": "doing",
-            "due_date": "12/12/2023"
+            "due_date": "12/12/2023",
+            "task_id": "d1b59dc1-f086-47b5-8231-fdfe5a525e07"
           },
           {
             "title": "Honorable",
             "description": "Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus. Curabitur at ipsum ac tellus semper interdum. Mauris ullamcorper purus sit amet nulla. Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam. Nam tristique tortor eu pede.",
             "status": "doing",
-            "due_date": "12/12/2023"
+            "due_date": "12/12/2023",
+            "task_id": "dc5500b8-c407-45c2-9fa7-8e2124a1d310"
           },
           {
             "title": "Mrs",
             "description": "Proin risus. Praesent lectus. Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis. Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus. Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis.",
             "status": "done",
-            "due_date": "12/12/2023"
+            "due_date": "12/12/2023",
+            "task_id": "7d348003-1745-4f8e-a726-1cc73939a74a"
           },
           {
             "title": "Honorable",
             "description": "Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris. Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis. Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem. Sed sagittis.",
             "status": "pending",
-            "due_date": "12/12/2023"
+            "due_date": "12/12/2023",
+            "task_id": "75f76358-e5de-40be-b061-0d5bc32a90b4"
           },
           {
             "title": "Ms",
             "description": "Suspendisse accumsan tortor quis turpis.",
             "status": "doing",
-            "due_date": "12/12/2023"
+            "due_date": "12/12/2023",
+            "task_id": "08e65157-e544-488a-b46b-089c7479ad02"
           },
           {
             "title": "Mrs",
             "description": "Integer a nibh. In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet. Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.",
             "status": "done",
-            "due_date": "12/12/2023"
-          },
-          {
-            "title": "Dr",
-            "description": "Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem. Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit. Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque. Duis bibendum.",
-            "status": "doing",
-            "due_date": "12/12/2023"
-          },
-          {
-            "title": "Rev",
-            "description": "Nam dui. Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius. Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi. Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.",
-            "status": "pending",
-            "due_date": "12/12/2023"
-          },
-          {
-            "title": "Honorable",
-            "description": "Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst. Maecenas ut massa quis augue luctus tincidunt.",
-            "status": "pending",
-            "due_date": "12/12/2023"
-          },
-          {
-            "title": "Mrs",
-            "description": "Nunc purus. Phasellus in felis.",
-            "status": "done",
-            "due_date": "12/12/2023"
+            "due_date": "12/12/2023",
+            "task_id": "38ebdf86-f6a1-4e96-8f32-7df5cc302409"
           }
         ]
       },
       {
-        "column": "Done",
+        "column": "Tomorrow",
+        "column_id": "10300410-8c8d-4a8c-8946-0de468318ea9",
         "tasks": [
           {
             "title": "Honorable",
             "description": "Fusce posuere felis sed lacus.",
             "status": "pending",
-            "due_date": "12/12/2023"
+            "due_date": "12/12/2023",
+            "task_id": "917a293a-f6bb-40ef-aa02-8b89e9365fe1"
           },
           {
             "title": "Mr",
             "description": "Proin eu mi. Nulla ac enim.",
             "status": "doing",
-            "due_date": "12/12/2023"
+            "due_date": "12/12/2023",
+            "task_id": "0e05fd1d-51f1-4b9b-b12a-a494a2948b2f"
           },
           {
             "title": "Rev",
             "description": "Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum. Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem. Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit. Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue.",
             "status": "pending",
-            "due_date": "12/12/2023"
+            "due_date": "12/12/2023",
+            "task_id": "866afbab-61c2-44f2-b969-4d3f8fa5d78e"
           },
           {
             "title": "Honorable",
             "description": "Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat. Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem. Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.",
             "status": "done",
-            "due_date": "12/12/2023"
+            "due_date": "12/12/2023",
+            "task_id": "c3bce39e-a0d3-49c0-9900-b49a2768eb88"
           }
         ]
       },
       {
-        "column": "Backlog",
+        "column": "Done",
+        "column_id": "188254e6-5775-4bdd-9c47-9024d734bc72",
         "tasks": [
           {
             "title": "Honorable",
             "description": "Etiam justo.",
             "status": "pending",
-            "due_date": "12/12/2023"
+            "due_date": "12/12/2023",
+            "task_id": "e0267149-14ca-4330-8cfc-76e0ce674759"
           },
           {
             "title": "Mrs",
             "description": "Proin risus. Praesent lectus. Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis. Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.",
             "status": "done",
-            "due_date": "12/12/2023"
+            "due_date": "12/12/2023",
+            "task_id": "b55a99c1-9195-4ccd-bc26-d59f63f20b46"
           },
           {
             "title": "Mrs",
             "description": "Duis mattis egestas metus. Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh. Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.",
             "status": "doing",
-            "due_date": "12/12/2023"
+            "due_date": "12/12/2023",
+            "task_id": "bde4cc69-8a11-4f06-ab2b-e769f1c3c396"
           },
           {
             "title": "Mr",
             "description": "In congue. Etiam justo. Etiam pretium iaculis justo. In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus. Nulla ut erat id mauris vulputate elementum.",
             "status": "done",
-            "due_date": "12/12/2023"
+            "due_date": "12/12/2023",
+            "task_id": "9283eacf-fa26-4eec-a5d7-cecb8b27cb6b"
           },
           {
             "title": "Honorable",
             "description": "Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus. Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero. Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.",
             "status": "pending",
-            "due_date": "12/12/2023"
-          },
-          {
-            "title": "Mr",
-            "description": "Praesent lectus. Vestibulum quam sapien, varius ut, blandit non, interdum in, ante.",
-            "status": "doing",
-            "due_date": "12/12/2023"
-          },
-          {
-            "title": "Ms",
-            "description": "Proin risus.",
-            "status": "doing",
-            "due_date": "12/12/2023"
+            "due_date": "12/12/2023",
+            "task_id": "856f3b58-59db-4398-b057-783cbcafaa64"
           }
         ]
-      },
-      {
-        "column": "Done",
-        "tasks": [
-          {
-            "title": "Honorable",
-            "description": "Maecenas pulvinar lobortis est. Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum. Proin eu mi.",
-            "status": "pending",
-            "due_date": "12/12/2023"
-          },
-          {
-            "title": "Ms",
-            "description": "Phasellus in felis. Donec semper sapien a libero. Nam dui. Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius. Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.",
-            "status": "doing",
-            "due_date": "12/12/2023"
-          },
-          {
-            "title": "Mrs",
-            "description": "Donec dapibus. Duis at velit eu est congue elementum. In hac habitasse platea dictumst.",
-            "status": "pending",
-            "due_date": "12/12/2023"
-          },
-          {
-            "title": "Ms",
-            "description": "Nulla facilisi. Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque. Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla.",
-            "status": "done",
-            "due_date": "12/12/2023"
-          },
-          {
-            "title": "Dr",
-            "description": "Donec semper sapien a libero.",
-            "status": "pending",
-            "due_date": "12/12/2023"
-          },
-          {
-            "title": "Mrs",
-            "description": "Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti. Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris. Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis. Fusce posuere felis sed lacus.",
-            "status": "done",
-            "due_date": "12/12/2023"
-          },
-          {
-            "title": "Ms",
-            "description": "Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl. Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum. Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo.",
-            "status": "done",
-            "due_date": "12/12/2023"
-          },
-          {
-            "title": "Rev",
-            "description": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est.",
-            "status": "done",
-            "due_date": "12/12/2023"
-          },
-          {
-            "title": "Rev",
-            "description": "Vestibulum rutrum rutrum neque. Aenean auctor gravida sem. Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio. Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin interdum mauris non ligula pellentesque ultrices.",
-            "status": "doing",
-            "due_date": "12/12/2023"
-          },
-          {
-            "title": "Honorable",
-            "description": "Nunc nisl.",
-            "status": "pending",
-            "due_date": "12/12/2023"
-          }
-        ]
-      },
-      {
-        "column": "Done",
-        "tasks": [
-          {
-            "title": "Dr",
-            "description": "Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl. Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.",
-            "status": "done",
-            "due_date": "12/12/2023"
-          },
-          {
-            "title": "Ms",
-            "description": "Nullam varius. Nulla facilisi. Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque. Quisque porta volutpat erat.",
-            "status": "pending",
-            "due_date": "12/12/2023"
-          },
-          {
-            "title": "Mrs",
-            "description": "In eleifend quam a odio. In hac habitasse platea dictumst. Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat. Curabitur gravida nisi at nibh. In hac habitasse platea dictumst.",
-            "status": "done",
-            "due_date": "12/12/2023"
-          },
-          {
-            "title": "Rev",
-            "description": "Vestibulum rutrum rutrum neque. Aenean auctor gravida sem. Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio. Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim.",
-            "status": "doing",
-            "due_date": "12/12/2023"
-          }
-        ]
-      },
-      {
-        "column": "In Progress",
-        "tasks": [
-          {
-            "title": "Rev",
-            "description": "Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis. Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor.",
-            "status": "pending",
-            "due_date": "12/12/2023"
-          },
-          {
-            "title": "Mr",
-            "description": "Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem. Fusce consequat. Nulla nisl.",
-            "status": "done",
-            "due_date": "12/12/2023"
-          }
-        ]
-      },
-      {
-        "column": "In Progress",
-        "tasks": [
-          {
-            "title": "Ms",
-            "description": "Nunc rhoncus dui vel sem. Sed sagittis.",
-            "status": "doing",
-            "due_date": "12/12/2023"
-          },
-          {
-            "title": "Ms",
-            "description": "Vivamus vel nulla eget eros elementum pellentesque. Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus. Phasellus in felis. Donec semper sapien a libero. Nam dui. Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.",
-            "status": "pending",
-            "due_date": "12/12/2023"
-          },
-          {
-            "title": "Mr",
-            "description": "Quisque ut erat. Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem. Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat. Praesent blandit. Nam nulla.",
-            "status": "doing",
-            "due_date": "12/12/2023"
-          },
-          {
-            "title": "Rev",
-            "description": "Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede. Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem. Fusce consequat. Nulla nisl. Nunc nisl. Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa.",
-            "status": "doing",
-            "due_date": "12/12/2023"
-          },
-          {
-            "title": "Ms",
-            "description": "Quisque ut erat. Curabitur gravida nisi at nibh.",
-            "status": "pending",
-            "due_date": "12/12/2023"
-          },
-          {
-            "title": "Honorable",
-            "description": "In eleifend quam a odio. In hac habitasse platea dictumst. Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem.",
-            "status": "done",
-            "due_date": "12/12/2023"
-          },
-          {
-            "title": "Rev",
-            "description": "Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue.",
-            "status": "doing",
-            "due_date": "12/12/2023"
-          }
-        ]
-      },
-      { "column": "Done", "tasks": [] }
+      }
     ]
   },
   {
@@ -657,350 +416,82 @@
     "isActive": true,
     "imageUrl": "https://images.unsplash.com/photo-1617791160505-6f00504e3519?ixid=M3w1MjY4NzN8MHwxfHJhbmRvbXx8fHx8fHx8fDE2OTk2OTcyNDN8\u0026ixlib=rb-4.0.3",
     "columns": [
-      { "column": "In Progress", "tasks": [] },
       {
-        "column": "Done",
+        "column": "To-do's",
+        "column_id": "36b3e563-b53a-435a-8fe2-442224aa8591",
+        "tasks": []
+      },
+      {
+        "column": "Doing",
+        "column_id": "8bf150e3-9498-4481-a2b9-f14de3ae1eb2",
         "tasks": [
           {
             "title": "Mr",
             "description": "Nulla mollis molestie lorem. Quisque ut erat. Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem. Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.",
             "status": "pending",
-            "due_date": "12/12/2023"
+            "due_date": "12/12/2023",
+            "task_id": "def30a46-1018-439b-8ed7-e4cabbfb6a87"
           },
           {
             "title": "Ms",
             "description": "Sed ante. Vivamus tortor. Duis mattis egestas metus. Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh. Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.",
             "status": "done",
-            "due_date": "12/12/2023"
+            "due_date": "12/12/2023",
+            "task_id": "2115d7b9-a3bd-4bdf-b55a-b9413494547e"
           },
           {
             "title": "Dr",
             "description": "Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh. In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.",
             "status": "doing",
-            "due_date": "12/12/2023"
-          },
-          {
-            "title": "Dr",
-            "description": "Nulla justo. Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis. Sed ante. Vivamus tortor. Duis mattis egestas metus. Aenean fermentum.",
-            "status": "doing",
-            "due_date": "12/12/2023"
-          },
-          {
-            "title": "Dr",
-            "description": "Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque. Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus. Phasellus in felis.",
-            "status": "doing",
-            "due_date": "12/12/2023"
+            "due_date": "12/12/2023",
+            "task_id": "450337d9-e3a4-4563-a20f-a9cc7f8dda2e"
           }
         ]
       },
       {
         "column": "Done",
+        "column_id": "e185bb55-d7f0-48d4-b5ea-42e469453242",
         "tasks": [
           {
             "title": "Mrs",
             "description": "Donec posuere metus vitae ipsum. Aliquam non mauris. Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis. Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem. Sed sagittis.",
             "status": "doing",
-            "due_date": "12/12/2023"
+            "due_date": "12/12/2023",
+            "task_id": "067d4e6e-3d93-4833-95a3-d6e0810c715d"
           },
           {
             "title": "Mr",
             "description": "Donec quis orci eget orci vehicula condimentum. Curabitur in libero ut massa volutpat convallis.",
             "status": "doing",
-            "due_date": "12/12/2023"
+            "due_date": "12/12/2023",
+            "task_id": "571ffc24-f93b-40f0-a9aa-3a3ab5b87d9e"
           },
           {
             "title": "Mrs",
             "description": "Morbi quis tortor id nulla ultrices aliquet. Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui. Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti. Nullam porttitor lacus at turpis.",
             "status": "pending",
-            "due_date": "12/12/2023"
-          },
-          {
-            "title": "Rev",
-            "description": "Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst. Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat. Curabitur gravida nisi at nibh. In hac habitasse platea dictumst.",
-            "status": "done",
-            "due_date": "12/12/2023"
-          },
-          {
-            "title": "Dr",
-            "description": "Vestibulum sed magna at nunc commodo placerat. Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.",
-            "status": "done",
-            "due_date": "12/12/2023"
-          },
-          {
-            "title": "Honorable",
-            "description": "Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque. Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus. Phasellus in felis.",
-            "status": "doing",
-            "due_date": "12/12/2023"
+            "due_date": "12/12/2023",
+            "task_id": "6d7e7f97-27b1-41d9-b6d9-6a423a045265"
           }
         ]
       },
       {
-        "column": "Done",
+        "column": "Blockers",
+        "column_id": "f01fc3aa-c39a-4e41-9b67-db57becec084",
         "tasks": [
           {
             "title": "Mrs",
             "description": "Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque. Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus. Phasellus in felis. Donec semper sapien a libero. Nam dui.",
             "status": "pending",
-            "due_date": "12/12/2023"
+            "due_date": "12/12/2023",
+            "task_id": "446060e3-37d0-4ca1-b81a-649dc68b65e7"
           },
           {
             "title": "Mrs",
             "description": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est.",
             "status": "doing",
-            "due_date": "12/12/2023"
-          }
-        ]
-      },
-      {
-        "column": "Backlog",
-        "tasks": [
-          {
-            "title": "Honorable",
-            "description": "Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus. Suspendisse potenti.",
-            "status": "doing",
-            "due_date": "12/12/2023"
-          }
-        ]
-      },
-      {
-        "column": "Backlog",
-        "tasks": [
-          {
-            "title": "Honorable",
-            "description": "Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus. Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.",
-            "status": "pending",
-            "due_date": "12/12/2023"
-          },
-          {
-            "title": "Dr",
-            "description": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
-            "status": "pending",
-            "due_date": "12/12/2023"
-          },
-          {
-            "title": "Honorable",
-            "description": "Sed ante. Vivamus tortor. Duis mattis egestas metus. Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.",
-            "status": "done",
-            "due_date": "12/12/2023"
-          },
-          {
-            "title": "Ms",
-            "description": "Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus. Phasellus in felis. Donec semper sapien a libero. Nam dui. Proin leo odio, porttitor id, consequat in, consequat ut, nulla.",
-            "status": "done",
-            "due_date": "12/12/2023"
-          },
-          {
-            "title": "Dr",
-            "description": "Donec semper sapien a libero. Nam dui. Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius. Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi. Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla.",
-            "status": "done",
-            "due_date": "12/12/2023"
-          },
-          {
-            "title": "Rev",
-            "description": "Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus. Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst. Maecenas ut massa quis augue luctus tincidunt.",
-            "status": "pending",
-            "due_date": "12/12/2023"
-          },
-          {
-            "title": "Honorable",
-            "description": "Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl. Aenean lectus.",
-            "status": "done",
-            "due_date": "12/12/2023"
-          },
-          {
-            "title": "Mrs",
-            "description": "In hac habitasse platea dictumst. Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat. Curabitur gravida nisi at nibh. In hac habitasse platea dictumst.",
-            "status": "pending",
-            "due_date": "12/12/2023"
-          },
-          {
-            "title": "Ms",
-            "description": "Aliquam non mauris. Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis. Fusce posuere felis sed lacus.",
-            "status": "done",
-            "due_date": "12/12/2023"
-          }
-        ]
-      },
-      {
-        "column": "Backlog",
-        "tasks": [
-          {
-            "title": "Dr",
-            "description": "Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est. Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum. Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem. Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy.",
-            "status": "pending",
-            "due_date": "12/12/2023"
-          },
-          {
-            "title": "Rev",
-            "description": "Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero. Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.",
-            "status": "doing",
-            "due_date": "12/12/2023"
-          },
-          {
-            "title": "Dr",
-            "description": "Nulla tellus. In sagittis dui vel nisl.",
-            "status": "done",
-            "due_date": "12/12/2023"
-          },
-          {
-            "title": "Ms",
-            "description": "Nulla justo. Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros.",
-            "status": "done",
-            "due_date": "12/12/2023"
-          },
-          {
-            "title": "Rev",
-            "description": "Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum. Proin eu mi. Nulla ac enim.",
-            "status": "done",
-            "due_date": "12/12/2023"
-          },
-          {
-            "title": "Ms",
-            "description": "Morbi vel lectus in quam fringilla rhoncus. Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.",
-            "status": "pending",
-            "due_date": "12/12/2023"
-          },
-          {
-            "title": "Mrs",
-            "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin interdum mauris non ligula pellentesque ultrices.",
-            "status": "done",
-            "due_date": "12/12/2023"
-          },
-          {
-            "title": "Honorable",
-            "description": "Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede. Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem. Fusce consequat. Nulla nisl. Nunc nisl. Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.",
-            "status": "doing",
-            "due_date": "12/12/2023"
-          },
-          {
-            "title": "Dr",
-            "description": "In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl. Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.",
-            "status": "pending",
-            "due_date": "12/12/2023"
-          }
-        ]
-      },
-      {
-        "column": "Backlog",
-        "tasks": [
-          {
-            "title": "Dr",
-            "description": "Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat. In congue. Etiam justo. Etiam pretium iaculis justo. In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus. Nulla ut erat id mauris vulputate elementum. Nullam varius.",
-            "status": "done",
-            "due_date": "12/12/2023"
-          },
-          {
-            "title": "Dr",
-            "description": "Nulla tellus. In sagittis dui vel nisl. Duis ac nibh.",
-            "status": "doing",
-            "due_date": "12/12/2023"
-          },
-          {
-            "title": "Mrs",
-            "description": "Donec posuere metus vitae ipsum. Aliquam non mauris. Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis. Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem. Sed sagittis.",
-            "status": "doing",
-            "due_date": "12/12/2023"
-          },
-          {
-            "title": "Mrs",
-            "description": "Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.",
-            "status": "doing",
-            "due_date": "12/12/2023"
-          },
-          {
-            "title": "Mr",
-            "description": "Vestibulum rutrum rutrum neque. Aenean auctor gravida sem. Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio. Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue.",
-            "status": "doing",
-            "due_date": "12/12/2023"
-          },
-          {
-            "title": "Dr",
-            "description": "Vivamus vel nulla eget eros elementum pellentesque. Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus. Phasellus in felis.",
-            "status": "doing",
-            "due_date": "12/12/2023"
-          },
-          {
-            "title": "Mrs",
-            "description": "Ut tellus. Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi. Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque. Quisque porta volutpat erat.",
-            "status": "done",
-            "due_date": "12/12/2023"
-          },
-          {
-            "title": "Rev",
-            "description": "Suspendisse accumsan tortor quis turpis. Sed ante. Vivamus tortor. Duis mattis egestas metus. Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh. Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.",
-            "status": "doing",
-            "due_date": "12/12/2023"
-          },
-          {
-            "title": "Dr",
-            "description": "In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus. Nulla ut erat id mauris vulputate elementum. Nullam varius.",
-            "status": "pending",
-            "due_date": "12/12/2023"
-          }
-        ]
-      },
-      {
-        "column": "Done",
-        "tasks": [
-          {
-            "title": "Mrs",
-            "description": "Etiam justo. Etiam pretium iaculis justo. In hac habitasse platea dictumst.",
-            "status": "pending",
-            "due_date": "12/12/2023"
-          },
-          {
-            "title": "Mrs",
-            "description": "Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum. Proin eu mi. Nulla ac enim.",
-            "status": "doing",
-            "due_date": "12/12/2023"
-          },
-          {
-            "title": "Mrs",
-            "description": "In congue. Etiam justo. Etiam pretium iaculis justo. In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.",
-            "status": "doing",
-            "due_date": "12/12/2023"
-          },
-          {
-            "title": "Mr",
-            "description": "Ut at dolor quis odio consequat varius. Integer ac leo.",
-            "status": "doing",
-            "due_date": "12/12/2023"
-          },
-          {
-            "title": "Ms",
-            "description": "Nullam molestie nibh in lectus.",
-            "status": "done",
-            "due_date": "12/12/2023"
-          },
-          {
-            "title": "Dr",
-            "description": "Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.",
-            "status": "doing",
-            "due_date": "12/12/2023"
-          },
-          {
-            "title": "Rev",
-            "description": "Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem. Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio. Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo.",
-            "status": "doing",
-            "due_date": "12/12/2023"
-          },
-          {
-            "title": "Mrs",
-            "description": "In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus. Nulla ut erat id mauris vulputate elementum.",
-            "status": "done",
-            "due_date": "12/12/2023"
-          },
-          {
-            "title": "Dr",
-            "description": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti. Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris. Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.",
-            "status": "pending",
-            "due_date": "12/12/2023"
-          },
-          {
-            "title": "Dr",
-            "description": "Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl. Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.",
-            "status": "pending",
-            "due_date": "12/12/2023"
+            "due_date": "12/12/2023",
+            "task_id": "67de7c03-4fbe-41b0-85e9-30c77baa0b8d"
           }
         ]
       }
@@ -1013,113 +504,90 @@
     "isActive": false,
     "columns": [
       {
-        "column": "Done",
+        "column": "Work",
+        "column_id": "6754d585-e553-43d1-b97e-f8e8eec05d4e",
         "tasks": [
           {
             "title": "Mrs",
             "description": "Vestibulum sed magna at nunc commodo placerat. Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede. Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.",
             "status": "doing",
-            "due_date": "12/12/2023"
+            "due_date": "12/12/2023",
+            "task_id": "e63a1860-7fe1-43c3-8de3-0e98fe194880"
           },
           {
             "title": "Mr",
             "description": "Ut at dolor quis odio consequat varius. Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi. Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.",
             "status": "done",
-            "due_date": "12/12/2023"
+            "due_date": "12/12/2023",
+            "task_id": "9b4c0530-8398-4b4e-87bf-18db26c86ece"
           },
           {
             "title": "Ms",
             "description": "Sed ante.",
             "status": "done",
-            "due_date": "12/12/2023"
-          },
-          {
-            "title": "Dr",
-            "description": "Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum. Proin eu mi. Nulla ac enim.",
-            "status": "doing",
-            "due_date": "12/12/2023"
-          },
-          {
-            "title": "Rev",
-            "description": "Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis. Sed ante. Vivamus tortor. Duis mattis egestas metus. Aenean fermentum. Donec ut mauris eget massa tempor convallis.",
-            "status": "doing",
-            "due_date": "12/12/2023"
-          },
-          {
-            "title": "Mrs",
-            "description": "Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus. Phasellus in felis. Donec semper sapien a libero. Nam dui. Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis.",
-            "status": "done",
-            "due_date": "12/12/2023"
+            "due_date": "12/12/2023",
+            "task_id": "96fa944c-6276-4673-83f9-c1b62bfc7d46"
           }
         ]
       },
       {
-        "column": "Backlog",
+        "column": "House Chores",
+        "column_id": "c8706d5b-5543-451b-97e6-51578cd60015",
         "tasks": [
           {
             "title": "Ms",
             "description": "Vivamus vel nulla eget eros elementum pellentesque. Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus. Phasellus in felis. Donec semper sapien a libero. Nam dui. Proin leo odio, porttitor id, consequat in, consequat ut, nulla.",
             "status": "done",
-            "due_date": "12/12/2023"
+            "due_date": "12/12/2023",
+            "task_id": "414e9abb-6dbb-4176-88b0-4b068392e6f1"
           },
           {
             "title": "Rev",
             "description": "Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero. Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum.",
             "status": "done",
-            "due_date": "12/12/2023"
+            "due_date": "12/12/2023",
+            "task_id": "79841a57-b866-4eed-a940-b39e1439872c"
           },
           {
             "title": "Ms",
             "description": "Quisque id justo sit amet sapien dignissim vestibulum.",
             "status": "done",
-            "due_date": "12/12/2023"
+            "due_date": "12/12/2023",
+            "task_id": "eeb1fa0b-325e-47ab-bbdf-bff19230e86a"
           },
           {
             "title": "Mrs",
             "description": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis. Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus. Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci.",
             "status": "done",
-            "due_date": "12/12/2023"
+            "due_date": "12/12/2023",
+            "task_id": "88b23f53-d7a7-4c18-9c7a-21bd5d408261"
           },
           {
             "title": "Mrs",
             "description": "Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst. Maecenas ut massa quis augue luctus tincidunt.",
             "status": "pending",
-            "due_date": "12/12/2023"
-          },
-          {
-            "title": "Rev",
-            "description": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.",
-            "status": "doing",
-            "due_date": "12/12/2023"
-          },
-          {
-            "title": "Rev",
-            "description": "Morbi quis tortor id nulla ultrices aliquet. Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui. Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam.",
-            "status": "done",
-            "due_date": "12/12/2023"
-          },
-          {
-            "title": "Mr",
-            "description": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio.",
-            "status": "doing",
-            "due_date": "12/12/2023"
+            "due_date": "12/12/2023",
+            "task_id": "6ea23dd7-c6c9-4d3d-8442-d010097b5528"
           }
         ]
       },
       {
-        "column": "In Progress",
+        "column": "Weekend",
+        "column_id": "25ddedf7-c06a-4d0b-a00a-4cb1d0778a8c",
         "tasks": [
           {
             "title": "Mrs",
             "description": "Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus. Suspendisse potenti.",
             "status": "pending",
-            "due_date": "12/12/2023"
+            "due_date": "12/12/2023",
+            "task_id": "3dbcf708-7b97-4ea6-bce1-567696cd2641"
           },
           {
             "title": "Ms",
             "description": "Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.",
             "status": "done",
-            "due_date": "12/12/2023"
+            "due_date": "12/12/2023",
+            "task_id": "7801df18-1a31-478f-9afb-d43e57865cf7"
           }
         ]
       }
