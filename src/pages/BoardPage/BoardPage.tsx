@@ -116,6 +116,7 @@ const BoardPage = () => {
     });
 
     setTasks(newTasks);
+    toast.success('Task updated');
   };
 
   const handleDeleteTask = (taskId: string) => {
@@ -123,6 +124,7 @@ const BoardPage = () => {
       return task.task_id !== taskId;
     });
     setTasks(newTasks);
+    toast.success('Task deleted');
   };
 
   // dnd drag handlers

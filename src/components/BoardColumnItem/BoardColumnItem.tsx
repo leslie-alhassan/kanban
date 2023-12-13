@@ -174,8 +174,8 @@ export const BoardColumnItem = ({
               className={cn(
                 'w-4 h-1.5 rounded-full',
                 task.status === 'pending' && 'bg-red-500',
-                task.status === 'todo' && 'bg-indigo-500',
-                task.status === 'doing' && 'bg-amber-300',
+                task.status === 'todo' && 'bg-amber-300',
+                task.status === 'doing' && 'bg-indigo-500',
                 task.status === 'done' && 'bg-emerald-500'
               )}
             ></div>
