@@ -1,7 +1,7 @@
 import { BoardColumn } from '@/components/BoardColumn/BoardColumn';
 import { DashboardNav } from '@/components/DashboardNav/DashboardNav';
-import { Task, useGetBoards } from '@/hooks/useGetBoards';
-import { Column } from '@/hooks/Board';
+import { Board, Task, useGetBoards } from '@/hooks/useGetBoards';
+import { Column } from '@/types';
 import { Plus } from 'lucide-react';
 
 import { useEffect, useState } from 'react';
@@ -19,11 +19,16 @@ import {
 } from '@dnd-kit/core';
 import { SortableContext, arrayMove } from '@dnd-kit/sortable';
 import { createPortal } from 'react-dom';
+import { useSelector } from 'react-redux';
 
 const BoardPage = () => {
   const boardId = useParams();
 
-  const board = useGetBoards(boardId.id)[0];
+  const boards = useSelector((state: { boards: Board[] }) => state.boards);
+
+  const board = useGetBoards(boardId.id, boards)[0];
+
+  console.log(boards);
 
   const [columns, setColumns] = useState<Column[]>(board.columns);
   const [columnIds, setColumnIds] = useState<string[]>([]);

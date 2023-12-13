@@ -5,7 +5,7 @@ import { BadgePlus, User2 } from 'lucide-react';
 import { Skeleton } from '../ui/skeleton';
 import { FormPopover } from '../FormPopover/FormPopover';
 import { useGetBoards } from '@/hooks/useGetBoards';
-import { Board } from '@/hooks/Board';
+import { Board } from '@/types';
 import { Link } from 'react-router-dom';
 import { cn } from '@/lib/utils';
 

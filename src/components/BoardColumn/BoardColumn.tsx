@@ -1,4 +1,4 @@
-import { Column } from '@/hooks/Board';
+import { Column } from '@/types';
 import { BoardColumnItem } from '../BoardColumnItem/BoardColumnItem';
 import { v4 as uuid } from 'uuid';
 import { Button } from '../ui/button';

@@ -1,16 +1,30 @@
-export type Id = string | number;
-
-export interface ActiveColumn {
-  column: string;
-  column_id: Id;
-  tasks: ActiveTask[];
+export interface Board {
+  board: string;
+  id: string;
+  organization_id: string;
+  isActive: boolean;
+  imageUrl?: string;
+  columns: {
+    column: string;
+    column_id: string;
+    tasks: {
+      title: string;
+      description: string;
+      status: string;
+      due_date: string;
+      task_id: string;
+    }[];
+  }[];
 }
 
-export interface ActiveTask {
-  title: string;
-  description: string;
-  status: string;
-  due_date: string;
-  task_id: Id;
-  column_id: Id;
+export interface Column {
+  column: string;
+  column_id: string;
+  tasks: {
+    title: string;
+    description: string;
+    status: string;
+    due_date: string;
+    task_id: string;
+  }[];
 }

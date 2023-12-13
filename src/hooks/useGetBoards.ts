@@ -1,5 +1,3 @@
-import boardData from '../data/data.json';
-
 export interface Board {
   board: string;
   id: string;
@@ -23,7 +21,10 @@ export interface Task {
   task_id: string;
 }
 
-export const useGetBoards = (id: string | undefined): Board[] => {
+export const useGetBoards = (
+  id: string | undefined,
+  boardData: Board[]
+): Board[] => {
   const boards = boardData.filter((board) => {
     return board.organization_id === id || board.id == id;
   });
