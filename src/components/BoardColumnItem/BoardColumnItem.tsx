@@ -179,6 +179,10 @@ export const BoardColumnItem = ({
                 task.status === 'done' && 'bg-emerald-500'
               )}
             ></div>
+
+            <p className='text-[.65rem] italic font-[500] text-neutral-500'>
+              {task.status}
+            </p>
           </div>
         </div>
       </div>
