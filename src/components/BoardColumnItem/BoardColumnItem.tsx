@@ -16,7 +16,12 @@ interface BoardColumnItemProps {
   onHandleDeleteTask: (arg0: string) => void;
   onHandleEditTask: (
     arg0: string,
-    arg1: { title: string; description: string }
+    arg1: {
+      title: string;
+      description: string;
+      due_date: string;
+      status: string;
+    }
   ) => void;
 }
 
@@ -27,8 +32,10 @@ export const BoardColumnItem = ({
 }: BoardColumnItemProps) => {
   const [expandTask, setExpandTask] = useState(false);
   const [editMode, setEditMode] = useState(false);
-  const [description, setDescription] = useState('');
   const [title, setTitle] = useState('');
+  const [description, setDescription] = useState('');
+  const [dueDate, setDueDate] = useState('');
+  const [status, setStatus] = useState('');
 
   const toggleEditMode = () => {
     setEditMode((prev) => !prev);
@@ -46,7 +53,12 @@ export const BoardColumnItem = ({
         <form
           onSubmit={(event) => {
             event.preventDefault();
-            onHandleEditTask(task.task_id, { title, description });
+            onHandleEditTask(task.task_id, {
+              title,
+              description,
+              due_date: dueDate,
+              status: status,
+            });
           }}
         >
           <label
@@ -94,8 +106,11 @@ export const BoardColumnItem = ({
           />
 
           <div className='flex items-center justify-between'>
-            <TaskDatePicker />
-            <TaskStatusPopover />
+            {/* @ts-ignore */}
+            <TaskDatePicker onSetDueDate={setDueDate} />
+
+            {/* @ts-ignore */}
+            <TaskStatusPopover onSetStatus={setStatus} />
           </div>
 
           <Button
@@ -118,7 +133,7 @@ export const BoardColumnItem = ({
           setExpandTask(!expandTask);
         }}
       >
-        <div className='flex items-center justify-between'>
+        <div className='flex items-start justify-between'>
           <h2
             className={cn('font-semibold text-sm', !expandTask && 'truncate')}
           >
@@ -159,6 +174,7 @@ export const BoardColumnItem = ({
               className={cn(
                 'w-4 h-1.5 rounded-full',
                 task.status === 'pending' && 'bg-red-500',
+                task.status === 'todo' && 'bg-indigo-500',
                 task.status === 'doing' && 'bg-amber-300',
                 task.status === 'done' && 'bg-emerald-500'
               )}

@@ -9,10 +9,32 @@ import {
   PopoverContent,
   PopoverTrigger,
 } from '@/components/ui/popover';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
-export const TaskDatePicker = () => {
+interface TaskDatePickerProps {
+  onSetDueDate: (arg0?: string) => void;
+}
+
+export const TaskDatePicker = ({ onSetDueDate }: TaskDatePickerProps) => {
   const [date, setDate] = useState<Date>();
+
+  useEffect(() => {
+    onSetDueDate(
+      date?.toLocaleDateString('en-CA', {
+        month: 'short',
+        day: 'numeric',
+        year: 'numeric',
+      })
+    );
+
+    console.log(
+      date?.toLocaleDateString('en-CA', {
+        month: 'short',
+        day: 'numeric',
+        year: 'numeric',
+      })
+    );
+  }, [date]);
 
   return (
     <Popover>
@@ -26,7 +48,13 @@ export const TaskDatePicker = () => {
         >
           <CalendarIcon className='mr-2 h-4 w-4' />
           {date ? (
-            format(date, 'PPP')
+            <span className='text-[0.75rem] font-semibold'>
+              {date.toLocaleDateString('en-CA', {
+                month: 'short',
+                day: 'numeric',
+                year: 'numeric',
+              })}
+            </span>
           ) : (
             <span className='text-[0.75rem] font-semibold'>Due date</span>
           )}
@@ -37,6 +65,15 @@ export const TaskDatePicker = () => {
           mode='single'
           selected={date}
           onSelect={setDate}
+          onDayClick={() =>
+            onSetDueDate(
+              date?.toLocaleDateString('en-CA', {
+                month: 'short',
+                day: 'numeric',
+                year: 'numeric',
+              })
+            )
+          }
           initialFocus
         />
       </PopoverContent>

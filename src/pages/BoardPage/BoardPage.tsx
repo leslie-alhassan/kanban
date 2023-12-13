@@ -91,7 +91,12 @@ const BoardPage = () => {
 
   const handleEditTask = (
     taskId: string,
-    payload: { title: string; description: string }
+    payload: {
+      title: string;
+      description: string;
+      due_date: string;
+      status: string;
+    }
   ) => {
     const newTasks = tasks.map((task) => {
       if (task.task_id !== taskId) {
@@ -101,8 +106,8 @@ const BoardPage = () => {
       const newTask = {
         title: payload.title || task.title,
         description: payload.description || task.description,
-        status: 'pending',
-        due_date: task.due_date,
+        status: payload.status || task.status || 'pending',
+        due_date: payload.due_date || task.due_date,
         task_id: task.task_id,
         column_id: task.column_id,
       };

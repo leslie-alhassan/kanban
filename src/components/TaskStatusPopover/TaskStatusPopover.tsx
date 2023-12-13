@@ -52,14 +52,13 @@ const statuses: Status[] = [
     label: 'Done',
     icon: CheckCircle2,
   },
-  {
-    value: 'canceled',
-    label: 'Canceled',
-    icon: XCircle,
-  },
 ];
 
-export const TaskStatusPopover = () => {
+interface TaskStatusPopoverProps {
+  onSetStatus: (arg0?: string) => void;
+}
+
+export const TaskStatusPopover = ({ onSetStatus }: TaskStatusPopoverProps) => {
   const [open, setOpen] = React.useState(false);
   const [selectedStatus, setSelectedStatus] = React.useState<Status | null>(
     null
@@ -108,6 +107,7 @@ export const TaskStatusPopover = () => {
                         statuses.find((priority) => priority.value === value) ||
                           null
                       );
+                      onSetStatus(status.value);
                       setOpen(false);
                     }}
                   >

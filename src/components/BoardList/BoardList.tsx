@@ -7,17 +7,17 @@ import { FormPopover } from '../FormPopover/FormPopover';
 import { useGetBoards } from '@/hooks/useGetBoards';
 import { Link } from 'react-router-dom';
 import { cn } from '@/lib/utils';
-import { useSelector } from 'react-redux';
 import { Board } from '@/types';
 
+import boardData from '../../data/data.json';
+
 export const BoardList = () => {
-  const boards = useSelector((state: { boards: Board[] }) => state.boards);
   const [orgBoards, setOrgBoards] = useState<Board[]>();
 
   const { organization, isLoaded } = useOrganization();
 
   useEffect(() => {
-    const orgBoards = useGetBoards(organization?.id, boards);
+    const orgBoards = useGetBoards(organization?.id, boardData);
 
     setOrgBoards(orgBoards);
   }, [organization]);

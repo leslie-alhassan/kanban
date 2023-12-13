@@ -14,7 +14,12 @@ interface BoardColumnProps {
   onHandleAddTask: (arg0: string) => void;
   onHandleEditTask: (
     arg0: string,
-    arg1: { title: string; description: string }
+    arg1: {
+      title: string;
+      description: string;
+      due_date: string;
+      status: string;
+    }
   ) => void;
   onHandleDeleteTask: (arg0: string) => void;
 }
