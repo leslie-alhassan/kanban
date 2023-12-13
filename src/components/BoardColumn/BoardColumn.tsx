@@ -12,6 +12,7 @@ interface BoardColumnProps {
   tasks: Task[];
   onHandleDeleteColumn: (arg0: string) => void;
   onHandleAddTask: (arg0: string) => void;
+  onHandleEditTask: (arg0: string, arg1: string) => void;
   onHandleDeleteTask: (arg0: string) => void;
 }
 
@@ -20,6 +21,7 @@ export const BoardColumn = ({
   tasks,
   onHandleDeleteColumn,
   onHandleAddTask,
+  onHandleEditTask,
   onHandleDeleteTask,
 }: BoardColumnProps) => {
   // dnd kit
@@ -70,7 +72,7 @@ export const BoardColumn = ({
           />
         </div>
 
-        <div className={column.tasks.length > 0 ? 'mb-6' : ''}>
+        <div className='mb-6'>
           <Button
             variant='primary'
             size='sm'
@@ -92,6 +94,7 @@ export const BoardColumn = ({
               key={uuid()}
               task={task}
               onHandleDeleteTask={onHandleDeleteTask}
+              onHandleEditTask={onHandleEditTask}
             />
           );
         })}

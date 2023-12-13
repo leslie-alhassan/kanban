@@ -1,7 +1,7 @@
 import { BoardColumn } from '@/components/BoardColumn/BoardColumn';
 import { DashboardNav } from '@/components/DashboardNav/DashboardNav';
 import { useGetBoards } from '@/hooks/useGetBoards';
-import { Column, Task } from '@/types';
+import { Column, Task, Board } from '@/types';
 import { Plus } from 'lucide-react';
 
 import { useEffect, useState } from 'react';
@@ -76,13 +76,30 @@ const BoardPage = () => {
       title: 'New task',
       description: 'To-do',
       status: 'pending',
-      due_date: new Date(Date.now()).toLocaleString(),
+      due_date: new Date(Date.now()).toLocaleString('en-CA', {
+        month: 'short',
+        day: 'numeric',
+        year: 'numeric',
+      }),
       task_id: uuid(),
       column_id: columnId,
     };
 
     toast.success('Task added');
     setTasks([newTask, ...tasks]);
+  };
+
+  const handleEditTask = (taskId: string, content: string) => {
+    const newTasks = tasks.map((task) => {
+      if (task.task_id !== taskId) return task;
+      return { ...task, content };
+    });
+
+    console.log(newTasks);
+
+    console.log('hey');
+
+    setTasks(newTasks);
   };
 
   const handleDeleteTask = (taskId: string) => {
@@ -166,6 +183,7 @@ const BoardPage = () => {
                       })}
                       onHandleDeleteColumn={handleDeleteColumn}
                       onHandleAddTask={handleAddTask}
+                      onHandleEditTask={handleEditTask}
                       onHandleDeleteTask={handleDeleteTask}
                     />
                   );
@@ -183,6 +201,7 @@ const BoardPage = () => {
                     })}
                     onHandleDeleteColumn={handleDeleteColumn}
                     onHandleAddTask={handleAddTask}
+                    onHandleEditTask={handleEditTask}
                     onHandleDeleteTask={handleDeleteTask}
                   />
                 )}

@@ -1,5 +1,5 @@
 import { cn } from '@/lib/utils';
-import { Trash2, X } from 'lucide-react';
+import { Edit, Trash2, X } from 'lucide-react';
 import { useState } from 'react';
 import { TaskStatusPopover } from '../TaskStatusPopover/TaskStatusPopover';
 import { TaskDatePicker } from '../TaskDatePicker/TaskDatePicker';
@@ -14,14 +14,17 @@ interface BoardColumnItemProps {
     task_id: string;
   };
   onHandleDeleteTask: (arg0: string) => void;
+  onHandleEditTask: (arg0: string, arg1: string) => void;
 }
 
 export const BoardColumnItem = ({
   task,
   onHandleDeleteTask,
+  onHandleEditTask,
 }: BoardColumnItemProps) => {
   const [expandTask, setExpandTask] = useState(false);
   const [editMode, setEditMode] = useState(false);
+  const [content, setContent] = useState(task.description);
 
   const toggleEditMode = () => {
     setEditMode((prev) => !prev);
@@ -37,9 +40,9 @@ export const BoardColumnItem = ({
           />
         </div>
         <form
-          className=''
-          onSubmit={() => {
-            event?.preventDefault();
+          onSubmit={(event) => {
+            event.preventDefault();
+            onHandleEditTask(task.task_id, content);
             console.log('form submitted');
           }}
         >
@@ -53,7 +56,8 @@ export const BoardColumnItem = ({
             type='text'
             className='w-full bg-indigo-600/10 rounded-sm h-[2rem] outline-none focus:border-2 focus:border-indigo-600 p-2 text-[.75rem] mb-3 mt-1'
             id='title'
-            placeholder={task.title}
+            placeholder='Title'
+            name='desc'
           />
 
           <label
@@ -65,7 +69,14 @@ export const BoardColumnItem = ({
           <textarea
             className='w-full bg-indigo-600/10 rounded-sm outline-none h-[8rem] resize-none text-[.75rem] p-2 focus:border-2 focus:border-indigo-600 mb-3 mt-1'
             id='description'
-            placeholder={task.description}
+            placeholder='Description'
+            onChange={(e) => setContent(e.target.value)}
+            autoFocus
+            onKeyDown={(e) => {
+              if (e.key === 'Enter') {
+                toggleEditMode();
+              }
+            }}
           />
 
           <div className='flex items-center justify-between'>
@@ -91,7 +102,6 @@ export const BoardColumnItem = ({
         className='w-full rounded-sm bg-white shadow-sm p-3  border-2 border-transparent hover:border-indigo-600/50'
         onClick={() => {
           setExpandTask(!expandTask);
-          toggleEditMode();
         }}
       >
         <div className='flex items-center justify-between'>
@@ -100,10 +110,16 @@ export const BoardColumnItem = ({
           >
             {task.title}
           </h2>
-          <Trash2
-            className='h-4 w-4 stroke-muted-foreground'
-            onClick={() => onHandleDeleteTask(task.task_id)}
-          />
+          <div className='flex items-center gap-x-2'>
+            <Edit
+              className='h-4 w-4 stroke-muted-foreground'
+              onClick={() => toggleEditMode()}
+            />
+            <Trash2
+              className='h-4 w-4 stroke-muted-foreground'
+              onClick={() => onHandleDeleteTask(task.task_id)}
+            />
+          </div>
         </div>
 
         <p
