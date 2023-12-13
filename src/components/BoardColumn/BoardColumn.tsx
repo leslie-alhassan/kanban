@@ -71,7 +71,9 @@ export const BoardColumn = ({
             variant='primary'
             size='sm'
             className='text-xs font-semibold px-2 py=1.5 w-full justify-start'
-            onClick={() => onHandleAddTask(column.column_id)}
+            onClick={() => {
+              onHandleAddTask(column.column_id);
+            }}
           >
             <Plus className='h-4 w-4 mr-2' />
             New task

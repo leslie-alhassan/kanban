@@ -68,6 +68,8 @@ const BoardPage = () => {
       return column.column_id === columnId;
     });
 
+    console.log('col before', column);
+
     const newTask: Task = {
       title: 'New task',
       description: 'To-do',
@@ -77,12 +79,11 @@ const BoardPage = () => {
     };
 
     console.log('col before', column);
-    column?.tasks.unshift(newTask);
 
     toast.success('Task added');
   };
 
-  // dnd drag handler
+  // dnd drag handlers
   const onDragStart = (event: DragStartEvent) => {
     if (event.active.data.current?.type === 'Column') {
       setActiveColumn(event.active.data.current.column);

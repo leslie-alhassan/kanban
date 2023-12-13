@@ -1,4 +1,5 @@
 import { cn } from '@/lib/utils';
+import { useState } from 'react';
 
 interface BoardColumnItemProps {
   task: {
@@ -11,12 +12,24 @@ interface BoardColumnItemProps {
 }
 
 export const BoardColumnItem = ({ task }: BoardColumnItemProps) => {
+  const [expandTask, setExpandTask] = useState(false);
+
   return (
     <li className='shrink-0  w-full select-none text-[0.75rem] cursor-pointer'>
-      <div className='w-full rounded-sm bg-white shadow-sm p-3 truncate border-2 border-transparent hover:border-indigo-600/50'>
-        <h2 className='font-semibold text-sm'>{task.title}</h2>
+      <div
+        className='w-full rounded-sm bg-white shadow-sm p-3  border-2 border-transparent hover:border-indigo-600/50'
+        onClick={() => setExpandTask(!expandTask)}
+      >
+        <h2 className={cn('font-semibold text-sm', !expandTask && 'truncate')}>
+          {task.title}
+        </h2>
 
-        <p className='text-muted-foreground truncate my-4'>
+        <p
+          className={cn(
+            'text-muted-foreground my-4',
+            !expandTask && 'truncate'
+          )}
+        >
           {task.description}
         </p>
 
