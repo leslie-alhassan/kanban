@@ -2,9 +2,8 @@ export interface Board {
   board: string;
   id: string;
   organization_id: string;
-  isActive: boolean;
   imageUrl?: string;
-  columns: Column[];
+  columns?: Column[];
 }
 
 export interface Column {

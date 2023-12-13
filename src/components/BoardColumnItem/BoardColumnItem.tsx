@@ -77,11 +77,6 @@ export const BoardColumnItem = ({
               setTitle(e.target.value);
             }}
             autoFocus
-            onKeyDown={(e) => {
-              if (e.key === 'Enter') {
-                toggleEditMode();
-              }
-            }}
           />
 
           <label
@@ -98,11 +93,6 @@ export const BoardColumnItem = ({
               setDescription(e.target.value);
             }}
             autoFocus
-            onKeyDown={(e) => {
-              if (e.key === 'Enter') {
-                toggleEditMode();
-              }
-            }}
           />
 
           <div className='flex items-center justify-between'>

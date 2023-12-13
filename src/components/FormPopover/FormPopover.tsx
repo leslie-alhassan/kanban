@@ -49,13 +49,13 @@ export const FormPopover = ({
       return setError('Please provide a board title');
     }
 
-    // TODO: handle read and write then redirect
+    // TODO: Handle new board add
     const newBoard = {
       board: title,
       id: uuid(),
       organization_id: orgId ? orgId : '',
       isActive: false,
-      imageUrl: imageUrl,
+      imageUrl: imageUrl.split('|')[2],
       columns: [],
     };
 
