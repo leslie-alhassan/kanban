@@ -160,14 +160,16 @@ const BoardPage = () => {
     <>
       <DashboardNav />
       <div
-        className='relative h-[100vh] w-full bg-no-repeat bg-cover bg-center bg-indigo-600/5'
+        className='relative h-[100vh] w-full bg-no-repeat bg-cover bg-center bg-indigo-600/5 '
         style={{ backgroundImage: `url(${board.imageUrl})` }}
       >
         {/* Board header */}
-        <div className='w-full h-20 z-[40] bg-black/50 top-14 flex  items-center gap-x-6 text-white absolute'>
-          <h1 className='font-semibold text-2xl px-6 md:px-20'>
-            {board.board}
-          </h1>
+        <div className='w-full h-20 z-[40] bg-black/50 top-14 flex items-center text-white absolute'>
+          <div className='md:max-w-screen-2xl mx-auto w-full'>
+            <h1 className='font-semibold text-2xl px-6 md:px-20 2xl:px-0'>
+              {board.board}
+            </h1>
+          </div>
         </div>
 
         {/* Background overlay */}
@@ -175,58 +177,58 @@ const BoardPage = () => {
 
         {/* Main content */}
         <main className='relative pt-28 h-full px-6 md:px-20 mx-auto top-[3rem]'>
-          <DndContext
-            onDragStart={onDragStart}
-            onDragEnd={onDragEnd}
-            sensors={sensors}
-          >
-            <button
-              onClick={handleAddColumn}
-              className='w-fit rounded-md bg-white/80 hover:bg-white/50 transition p-3 flex items-center font-medium text-sm mb-4'
+          <div className='md:max-w-screen-2xl mx-auto'>
+            <DndContext
+              onDragStart={onDragStart}
+              onDragEnd={onDragEnd}
+              sensors={sensors}
             >
-              <Plus className='h-4 w-4 mr-2' />
-              New Column
-            </button>
-
-            {/* Columns */}
-            <div className='flex gap-4 overflow-scroll'>
-              <SortableContext items={columnIds}>
-                {columns.map((column) => {
-                  return (
+              <button
+                onClick={handleAddColumn}
+                className='w-fit rounded-md bg-white/80 hover:bg-white/50 transition p-3 flex items-center font-medium text-sm mb-4'
+              >
+                <Plus className='h-4 w-4 mr-2' />
+                New Column
+              </button>
+              {/* Columns */}
+              <div className='flex gap-4 overflow-scroll'>
+                <SortableContext items={columnIds}>
+                  {columns.map((column) => {
+                    return (
+                      <BoardColumn
+                        key={column.column_id}
+                        column={column}
+                        tasks={tasks.filter((task) => {
+                          return task.column_id === column.column_id;
+                        })}
+                        onHandleDeleteColumn={handleDeleteColumn}
+                        onHandleAddTask={handleAddTask}
+                        onHandleEditTask={handleEditTask}
+                        onHandleDeleteTask={handleDeleteTask}
+                      />
+                    );
+                  })}
+                </SortableContext>
+              </div>
+              {createPortal(
+                <DragOverlay>
+                  {activeColumn && (
                     <BoardColumn
-                      key={column.column_id}
-                      column={column}
+                      column={activeColumn}
                       tasks={tasks.filter((task) => {
-                        return task.column_id === column.column_id;
+                        return task.column_id === activeColumn.column_id;
                       })}
                       onHandleDeleteColumn={handleDeleteColumn}
                       onHandleAddTask={handleAddTask}
                       onHandleEditTask={handleEditTask}
                       onHandleDeleteTask={handleDeleteTask}
                     />
-                  );
-                })}
-              </SortableContext>
-            </div>
-
-            {createPortal(
-              <DragOverlay>
-                {activeColumn && (
-                  <BoardColumn
-                    column={activeColumn}
-                    tasks={tasks.filter((task) => {
-                      return task.column_id === activeColumn.column_id;
-                    })}
-                    onHandleDeleteColumn={handleDeleteColumn}
-                    onHandleAddTask={handleAddTask}
-                    onHandleEditTask={handleEditTask}
-                    onHandleDeleteTask={handleDeleteTask}
-                  />
-                )}
-              </DragOverlay>,
-              document.body
-            )}
-          </DndContext>
+                  )}
+                </DragOverlay>,
+                document.body
+              )}
+            </DndContext>
+          </div>
         </main>
       </div>
     </>
