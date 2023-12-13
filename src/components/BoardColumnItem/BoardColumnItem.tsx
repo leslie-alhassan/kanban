@@ -14,7 +14,10 @@ interface BoardColumnItemProps {
     task_id: string;
   };
   onHandleDeleteTask: (arg0: string) => void;
-  onHandleEditTask: (arg0: string, arg1: string) => void;
+  onHandleEditTask: (
+    arg0: string,
+    arg1: { title: string; description: string }
+  ) => void;
 }
 
 export const BoardColumnItem = ({
@@ -24,7 +27,8 @@ export const BoardColumnItem = ({
 }: BoardColumnItemProps) => {
   const [expandTask, setExpandTask] = useState(false);
   const [editMode, setEditMode] = useState(false);
-  const [content, setContent] = useState('');
+  const [description, setDescription] = useState('');
+  const [title, setTitle] = useState('');
 
   const toggleEditMode = () => {
     setEditMode((prev) => !prev);
@@ -42,7 +46,7 @@ export const BoardColumnItem = ({
         <form
           onSubmit={(event) => {
             event.preventDefault();
-            onHandleEditTask(task.task_id, content);
+            onHandleEditTask(task.task_id, { title, description });
           }}
         >
           <label
@@ -57,6 +61,15 @@ export const BoardColumnItem = ({
             id='title'
             placeholder='Title'
             name='desc'
+            onChange={(e) => {
+              setTitle(e.target.value);
+            }}
+            autoFocus
+            onKeyDown={(e) => {
+              if (e.key === 'Enter') {
+                toggleEditMode();
+              }
+            }}
           />
 
           <label
@@ -70,7 +83,7 @@ export const BoardColumnItem = ({
             id='description'
             placeholder='Description'
             onChange={(e) => {
-              setContent(e.target.value);
+              setDescription(e.target.value);
             }}
             autoFocus
             onKeyDown={(e) => {

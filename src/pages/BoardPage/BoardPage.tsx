@@ -89,25 +89,27 @@ const BoardPage = () => {
     setTasks([newTask, ...tasks]);
   };
 
-  const handleEditTask = (taskId: string, content: string) => {
+  const handleEditTask = (
+    taskId: string,
+    payload: { title: string; description: string }
+  ) => {
     const newTasks = tasks.map((task) => {
       if (task.task_id !== taskId) {
         return task;
       }
 
       const newTask = {
-        title: task.title,
-        description: content || task.description,
+        title: payload.title || task.title,
+        description: payload.description || task.description,
         status: 'pending',
         due_date: task.due_date,
         task_id: task.task_id,
         column_id: task.column_id,
       };
-      console.log({ ...task, ...newTask });
+
       return { ...task, ...newTask };
     });
 
-    // console.log(newTasks);
     setTasks(newTasks);
   };
 
