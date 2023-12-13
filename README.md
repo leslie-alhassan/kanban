@@ -1,6 +1,6 @@
 # Kanban
 
-A simply front-end to-do application.
+A simple front-end to-do application.
 
 ## Prerequisites
 
