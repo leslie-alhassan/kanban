@@ -1,4 +1,4 @@
-import { Column } from '@/types';
+import { Column, Task } from '@/types';
 import { BoardColumnItem } from '../BoardColumnItem/BoardColumnItem';
 import { v4 as uuid } from 'uuid';
 import { Button } from '../ui/button';
@@ -9,12 +9,14 @@ import { CSS } from '@dnd-kit/utilities';
 
 interface BoardColumnProps {
   column: Column;
+  tasks: Task[];
   onHandleDeleteColumn: (arg0: string) => void;
   onHandleAddTask: (arg0: string) => void;
 }
 
 export const BoardColumn = ({
   column,
+  tasks,
   onHandleDeleteColumn,
   onHandleAddTask,
 }: BoardColumnProps) => {
@@ -33,6 +35,7 @@ export const BoardColumn = ({
     transform: CSS.Transform.toString(transform),
   };
 
+  console.log(tasks);
   // background placeholder for dragged columns
   if (isDragging) {
     return (
@@ -82,7 +85,7 @@ export const BoardColumn = ({
       </div>
 
       <ol className='flex gap-y-3 flex-col'>
-        {column.tasks?.map((task) => {
+        {tasks.map((task) => {
           return (
             <BoardColumnItem
               key={uuid()}

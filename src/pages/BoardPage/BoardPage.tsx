@@ -1,7 +1,7 @@
 import { BoardColumn } from '@/components/BoardColumn/BoardColumn';
 import { DashboardNav } from '@/components/DashboardNav/DashboardNav';
-import { Board, Task, useGetBoards } from '@/hooks/useGetBoards';
-import { Column } from '@/types';
+import { useGetBoards } from '@/hooks/useGetBoards';
+import { Board, Column, Task } from '@/types';
 import { Plus } from 'lucide-react';
 
 import { useEffect, useState } from 'react';
@@ -23,15 +23,21 @@ import { useSelector } from 'react-redux';
 
 const BoardPage = () => {
   const boardId = useParams();
-
   const boards = useSelector((state: { boards: Board[] }) => state.boards);
-
   const board = useGetBoards(boardId.id, boards)[0];
-
-  console.log(boards);
 
   const [columns, setColumns] = useState<Column[]>(board.columns);
   const [columnIds, setColumnIds] = useState<string[]>([]);
+
+  const allTasks: Task[] = [];
+  const getAllTasks = columns.forEach((col) => {
+    allTasks.push(...col.tasks);
+  });
+
+  console.log(allTasks);
+
+  const [tasks, setTasks] = useState<Task[]>(allTasks);
+
   const [activeColumn, setActiveColumn] = useState<Column | null>(null);
 
   // activation sensor for drag over event to prevent disabling of deletion of columns
@@ -69,23 +75,17 @@ const BoardPage = () => {
   };
 
   const handleAddTask = (columnId: string) => {
-    const column = columns.find((column) => {
-      return column.column_id === columnId;
-    });
-
-    console.log('col before', column);
-
     const newTask: Task = {
       title: 'New task',
       description: 'To-do',
       status: 'pending',
       due_date: new Date(Date.now()).toLocaleString(),
       task_id: uuid(),
+      column_id: columnId,
     };
 
-    console.log('col before', column);
-
     toast.success('Task added');
+    setTasks([newTask, ...tasks]);
   };
 
   // dnd drag handlers
@@ -157,6 +157,9 @@ const BoardPage = () => {
                     <BoardColumn
                       key={column.column_id}
                       column={column}
+                      tasks={tasks.filter((task) => {
+                        return task.column_id === column.column_id;
+                      })}
                       onHandleDeleteColumn={handleDeleteColumn}
                       onHandleAddTask={handleAddTask}
                     />
@@ -170,6 +173,9 @@ const BoardPage = () => {
                 {activeColumn && (
                   <BoardColumn
                     column={activeColumn}
+                    tasks={tasks.filter((task) => {
+                      return task.column_id === activeColumn.column_id;
+                    })}
                     onHandleDeleteColumn={handleDeleteColumn}
                     onHandleAddTask={handleAddTask}
                   />

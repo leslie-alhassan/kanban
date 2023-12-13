@@ -5,19 +5,21 @@ import { BadgePlus, User2 } from 'lucide-react';
 import { Skeleton } from '../ui/skeleton';
 import { FormPopover } from '../FormPopover/FormPopover';
 import { useGetBoards } from '@/hooks/useGetBoards';
-import { Board } from '@/types';
 import { Link } from 'react-router-dom';
 import { cn } from '@/lib/utils';
+import { useSelector } from 'react-redux';
+import { Board } from '@/types';
 
 export const BoardList = () => {
-  const [boards, setBoards] = useState<Board[]>([]);
+  const boards = useSelector((state: { boards: Board[] }) => state.boards);
+  const [orgBoards, setOrgBoards] = useState<Board[]>();
 
   const { organization, isLoaded } = useOrganization();
 
   useEffect(() => {
-    const orgBoards = useGetBoards(organization?.id);
+    const orgBoards = useGetBoards(organization?.id, boards);
 
-    setBoards(orgBoards);
+    setOrgBoards(orgBoards);
   }, [organization]);
 
   if (!isLoaded) {
@@ -59,7 +61,7 @@ export const BoardList = () => {
         </FormPopover>
 
         {/* Boards */}
-        {boards?.map((board) => {
+        {orgBoards?.map((board) => {
           return (
             <Link
               to={`/board/${board.id}`}
