@@ -11,8 +11,10 @@ const buttonVariants = cva(
       variant: {
         primary:
           'bg-gradient-to-r from-indigo-600 to-violet-400 text-primary-foreground hover:bg-indigo-600/90 shadow',
+        cancel: 'bg-indigo-600/20 hover:bg-indigo-600/10 text-indigo-600 ',
         muted:
           'bg-neutral-300/70 hover:bg-neutral-300/50 hover:text-accent-foreground',
+        date: 'border border-input bg-background hover:bg-accent hover:text-indigo-600',
         default: 'bg-primary text-primary-foreground hover:bg-primary/90',
         destructive:
           'bg-destructive text-destructive-foreground hover:bg-destructive/90',
