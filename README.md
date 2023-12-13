@@ -9,7 +9,7 @@ Node version 18.x.x
 ## Cloning the repository
 
 ```
-git clone https://github.com/leslie-alhasssan/north-one-to-do/tree/develop
+git clone git@github.com:leslie-alhasssan/north-one-to-do.git
 ```
 
 ## Install packages
