@@ -24,7 +24,7 @@ export const BoardColumnItem = ({
 }: BoardColumnItemProps) => {
   const [expandTask, setExpandTask] = useState(false);
   const [editMode, setEditMode] = useState(false);
-  const [content, setContent] = useState(task.description);
+  const [content, setContent] = useState('');
 
   const toggleEditMode = () => {
     setEditMode((prev) => !prev);
@@ -43,7 +43,6 @@ export const BoardColumnItem = ({
           onSubmit={(event) => {
             event.preventDefault();
             onHandleEditTask(task.task_id, content);
-            console.log('form submitted');
           }}
         >
           <label
@@ -70,7 +69,9 @@ export const BoardColumnItem = ({
             className='w-full bg-indigo-600/10 rounded-sm outline-none h-[8rem] resize-none text-[.75rem] p-2 focus:border-2 focus:border-indigo-600 mb-3 mt-1'
             id='description'
             placeholder='Description'
-            onChange={(e) => setContent(e.target.value)}
+            onChange={(e) => {
+              setContent(e.target.value);
+            }}
             autoFocus
             onKeyDown={(e) => {
               if (e.key === 'Enter') {

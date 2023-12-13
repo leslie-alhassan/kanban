@@ -1,7 +1,7 @@
 import { BoardColumn } from '@/components/BoardColumn/BoardColumn';
 import { DashboardNav } from '@/components/DashboardNav/DashboardNav';
 import { useGetBoards } from '@/hooks/useGetBoards';
-import { Column, Task, Board } from '@/types';
+import { Column, Task } from '@/types';
 import { Plus } from 'lucide-react';
 
 import { useEffect, useState } from 'react';
@@ -74,7 +74,7 @@ const BoardPage = () => {
   const handleAddTask = (columnId: string) => {
     const newTask: Task = {
       title: 'New task',
-      description: 'To-do',
+      description: '',
       status: 'pending',
       due_date: new Date(Date.now()).toLocaleString('en-CA', {
         month: 'short',
@@ -91,14 +91,23 @@ const BoardPage = () => {
 
   const handleEditTask = (taskId: string, content: string) => {
     const newTasks = tasks.map((task) => {
-      if (task.task_id !== taskId) return task;
-      return { ...task, content };
+      if (task.task_id !== taskId) {
+        return task;
+      }
+
+      const newTask = {
+        title: task.title,
+        description: content || task.description,
+        status: 'pending',
+        due_date: task.due_date,
+        task_id: task.task_id,
+        column_id: task.column_id,
+      };
+      console.log({ ...task, ...newTask });
+      return { ...task, ...newTask };
     });
 
-    console.log(newTasks);
-
-    console.log('hey');
-
+    // console.log(newTasks);
     setTasks(newTasks);
   };
 
