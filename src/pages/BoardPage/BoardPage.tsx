@@ -30,12 +30,9 @@ const BoardPage = () => {
   const [columnIds, setColumnIds] = useState<string[]>([]);
 
   const allTasks: Task[] = [];
-  const getAllTasks = columns.forEach((col) => {
+  columns.forEach((col) => {
     allTasks.push(...col.tasks);
   });
-
-  console.log(allTasks);
-
   const [tasks, setTasks] = useState<Task[]>(allTasks);
 
   const [activeColumn, setActiveColumn] = useState<Column | null>(null);
@@ -86,6 +83,13 @@ const BoardPage = () => {
 
     toast.success('Task added');
     setTasks([newTask, ...tasks]);
+  };
+
+  const handleDeleteTask = (taskId: string) => {
+    const newTasks = tasks.filter((task) => {
+      return task.task_id !== taskId;
+    });
+    setTasks(newTasks);
   };
 
   // dnd drag handlers
@@ -162,6 +166,7 @@ const BoardPage = () => {
                       })}
                       onHandleDeleteColumn={handleDeleteColumn}
                       onHandleAddTask={handleAddTask}
+                      onHandleDeleteTask={handleDeleteTask}
                     />
                   );
                 })}
@@ -178,6 +183,7 @@ const BoardPage = () => {
                     })}
                     onHandleDeleteColumn={handleDeleteColumn}
                     onHandleAddTask={handleAddTask}
+                    onHandleDeleteTask={handleDeleteTask}
                   />
                 )}
               </DragOverlay>,

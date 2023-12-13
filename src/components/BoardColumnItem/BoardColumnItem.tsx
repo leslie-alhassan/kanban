@@ -1,4 +1,5 @@
 import { cn } from '@/lib/utils';
+import { Trash2 } from 'lucide-react';
 import { useState } from 'react';
 
 interface BoardColumnItemProps {
@@ -9,9 +10,13 @@ interface BoardColumnItemProps {
     due_date: string;
     task_id: string;
   };
+  onHandleDeleteTask: (arg0: string) => void;
 }
 
-export const BoardColumnItem = ({ task }: BoardColumnItemProps) => {
+export const BoardColumnItem = ({
+  task,
+  onHandleDeleteTask,
+}: BoardColumnItemProps) => {
   const [expandTask, setExpandTask] = useState(false);
 
   return (
@@ -20,9 +25,17 @@ export const BoardColumnItem = ({ task }: BoardColumnItemProps) => {
         className='w-full rounded-sm bg-white shadow-sm p-3  border-2 border-transparent hover:border-indigo-600/50'
         onClick={() => setExpandTask(!expandTask)}
       >
-        <h2 className={cn('font-semibold text-sm', !expandTask && 'truncate')}>
-          {task.title}
-        </h2>
+        <div className='flex items-center justify-between'>
+          <h2
+            className={cn('font-semibold text-sm', !expandTask && 'truncate')}
+          >
+            {task.title}
+          </h2>
+          <Trash2
+            className='h-4 w-4 stroke-muted-foreground'
+            onClick={() => onHandleDeleteTask(task.task_id)}
+          />
+        </div>
 
         <p
           className={cn(

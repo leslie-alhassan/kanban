@@ -12,6 +12,7 @@ interface BoardColumnProps {
   tasks: Task[];
   onHandleDeleteColumn: (arg0: string) => void;
   onHandleAddTask: (arg0: string) => void;
+  onHandleDeleteTask: (arg0: string) => void;
 }
 
 export const BoardColumn = ({
@@ -19,6 +20,7 @@ export const BoardColumn = ({
   tasks,
   onHandleDeleteColumn,
   onHandleAddTask,
+  onHandleDeleteTask,
 }: BoardColumnProps) => {
   // dnd kit
   const {
@@ -35,7 +37,6 @@ export const BoardColumn = ({
     transform: CSS.Transform.toString(transform),
   };
 
-  console.log(tasks);
   // background placeholder for dragged columns
   if (isDragging) {
     return (
@@ -90,6 +91,7 @@ export const BoardColumn = ({
             <BoardColumnItem
               key={uuid()}
               task={task}
+              onHandleDeleteTask={onHandleDeleteTask}
             />
           );
         })}
