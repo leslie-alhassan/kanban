@@ -92,7 +92,6 @@ export const BoardColumnItem = ({
             onChange={(e) => {
               setDescription(e.target.value);
             }}
-            autoFocus
           />
 
           <div className='flex items-center justify-between'>
