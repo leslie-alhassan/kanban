@@ -9,7 +9,7 @@ Node version 18.x.x
 ## Cloning the repository
 
 ```
-git clone git@github.com:leslie-alhasssan/north-one-to-do.git
+git clone git@github.com:leslie-alhasssan/kanban.git
 ```
 
 ## Install packages
