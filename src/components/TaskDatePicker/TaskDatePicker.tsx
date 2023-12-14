@@ -1,4 +1,3 @@
-import { format } from 'date-fns';
 import { Calendar as CalendarIcon } from 'lucide-react';
 
 import { cn } from '@/lib/utils';
@@ -20,14 +19,6 @@ export const TaskDatePicker = ({ onSetDueDate }: TaskDatePickerProps) => {
 
   useEffect(() => {
     onSetDueDate(
-      date?.toLocaleDateString('en-CA', {
-        month: 'short',
-        day: 'numeric',
-        year: 'numeric',
-      })
-    );
-
-    console.log(
       date?.toLocaleDateString('en-CA', {
         month: 'short',
         day: 'numeric',

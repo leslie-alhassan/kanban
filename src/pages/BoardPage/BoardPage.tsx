@@ -1,9 +1,9 @@
 import { BoardColumn } from '@/components/BoardColumn/BoardColumn';
 import { DashboardNav } from '@/components/DashboardNav/DashboardNav';
 import { useGetBoards } from '@/hooks/useGetBoards';
-import { Column, Task } from '@/types';
 import { Plus } from 'lucide-react';
 
+import { Column, Task } from '@/types';
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { toast } from 'sonner';
@@ -23,9 +23,11 @@ import { createPortal } from 'react-dom';
 import boardData from '../../data/data.json';
 
 const BoardPage = () => {
-  const boardId = useParams();
-  const board = useGetBoards(boardId.id, boardData)[0];
+  const { id } = useParams();
+  const board = useGetBoards(id, boardData)[0];
 
+  // @ts-ignore
+  // ! todo
   const [columns, setColumns] = useState<Column[]>(board.columns);
   const [columnIds, setColumnIds] = useState<string[]>([]);
 

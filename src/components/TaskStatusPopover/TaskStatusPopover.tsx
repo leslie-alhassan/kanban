@@ -6,7 +6,6 @@ import {
   Circle,
   HelpCircle,
   LucideIcon,
-  XCircle,
 } from 'lucide-react';
 
 import { cn } from '@/lib/utils';
@@ -56,13 +55,13 @@ const statuses: Status[] = [
 
 interface TaskStatusPopoverProps {
   onSetStatus: (arg0?: string) => void;
+  currStatus: string;
 }
 
 export const TaskStatusPopover = ({ onSetStatus }: TaskStatusPopoverProps) => {
   const [open, setOpen] = React.useState(false);
-  const [selectedStatus, setSelectedStatus] = React.useState<Status | null>(
-    null
-  );
+
+  const [selectedStatus, setSelectedStatus] = React.useState<Status | null>();
 
   return (
     <div className='flex items-center space-x-4'>

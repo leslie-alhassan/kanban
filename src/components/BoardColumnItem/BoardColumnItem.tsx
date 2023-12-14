@@ -32,8 +32,8 @@ export const BoardColumnItem = ({
 }: BoardColumnItemProps) => {
   const [expandTask, setExpandTask] = useState(false);
   const [editMode, setEditMode] = useState(false);
-  const [title, setTitle] = useState('');
-  const [description, setDescription] = useState('');
+  const [title, setTitle] = useState(task.title);
+  const [description, setDescription] = useState(task.description);
   const [dueDate, setDueDate] = useState('');
   const [status, setStatus] = useState('');
 
@@ -71,7 +71,7 @@ export const BoardColumnItem = ({
             type='text'
             className='w-full bg-indigo-600/10 rounded-sm h-[2rem] outline-none focus:border-2 focus:border-indigo-600 p-2 text-[.75rem] mb-3 mt-1'
             id='title'
-            placeholder='Title'
+            value={title}
             name='desc'
             onChange={(e) => {
               setTitle(e.target.value);
@@ -88,7 +88,7 @@ export const BoardColumnItem = ({
           <textarea
             className='w-full bg-indigo-600/10 rounded-sm outline-none h-[8rem] resize-none text-[.75rem] p-2 focus:border-2 focus:border-indigo-600 mb-3 mt-1'
             id='description'
-            placeholder='Description'
+            value={description}
             onChange={(e) => {
               setDescription(e.target.value);
             }}
