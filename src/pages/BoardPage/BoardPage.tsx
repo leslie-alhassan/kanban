@@ -26,8 +26,8 @@ const BoardPage = () => {
   const { id } = useParams();
   const board = useGetBoards(id, boardData)[0];
 
-  // @ts-ignore
-  // ! todo
+  document.title = `Kanban | ${board.board}`;
+
   const [columns, setColumns] = useState<Column[]>(board.columns);
   const [columnIds, setColumnIds] = useState<string[]>([]);
 
@@ -52,8 +52,6 @@ const BoardPage = () => {
     setColumnIds(ids);
   }, [columns]);
 
-  document.title = `Kanban | ${board.board}`;
-
   const handleAddColumn = () => {
     const newColumn: Column = {
       column: `Column ${columns.length + 1}`,
@@ -73,17 +71,19 @@ const BoardPage = () => {
     toast.success('Column deleted');
   };
 
-  const handleAddTask = (columnId: string) => {
+  const handleAddTask = (columnId: string, task?: Task) => {
     const newTask: Task = {
-      title: 'New task',
-      description: '',
-      status: 'pending',
-      due_date: new Date(Date.now()).toLocaleString('en-CA', {
-        month: 'short',
-        day: 'numeric',
-        year: 'numeric',
-      }),
-      task_id: uuid(),
+      title: task?.title || 'New task',
+      description: task?.description || '',
+      status: task?.status || 'pending',
+      due_date:
+        task?.due_date ||
+        new Date(Date.now()).toLocaleString('en-CA', {
+          month: 'short',
+          day: 'numeric',
+          year: 'numeric',
+        }),
+      task_id: task?.task_id || uuid(),
       column_id: columnId,
     };
 

@@ -70,6 +70,9 @@ export const BoardColumn = ({
         {...listeners}
       >
         <div className='flex gap-x-2 items-center'>
+          <p className='text-[.6rem] font-semibold bg-[#323232] shadow py-1 px-3 rounded-xl text-white'>
+            {tasks.length}
+          </p>
           <h1 className='font-semibold text-muted-foreground text-sm italic'>
             {column.column}
           </h1>

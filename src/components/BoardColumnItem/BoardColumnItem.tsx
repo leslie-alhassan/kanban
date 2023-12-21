@@ -117,7 +117,7 @@ export const BoardColumnItem = ({
   return (
     <li className='shrink-0  w-full select-none text-[0.75rem] cursor-pointer'>
       <div
-        className='w-full rounded-sm bg-white shadow-sm p-3  border-2 border-transparent hover:border-indigo-600/50'
+        className=' w-full rounded-sm bg-white shadow-sm p-3  border-2 border-transparent hover:border-indigo-600/50'
         onClick={() => {
           setExpandTask(!expandTask);
         }}
@@ -162,8 +162,8 @@ export const BoardColumnItem = ({
             <div
               className={cn(
                 'w-4 h-1.5 rounded-full',
-                task.status === 'pending' && 'bg-red-500',
-                task.status === 'todo' && 'bg-amber-300',
+                task.status === 'pending' && 'bg-[#E54F46]',
+                task.status === 'todo' && 'bg-[#DCE546]',
                 task.status === 'doing' && 'bg-indigo-500',
                 task.status === 'done' && 'bg-emerald-500'
               )}
