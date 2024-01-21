@@ -28,6 +28,7 @@ const BoardPage = () => {
 
   document.title = `Kanban | ${board.board}`;
 
+  // @ts-expect-error: board.coulmns[] is undefined initially
   const [columns, setColumns] = useState<Column[]>(board.columns);
   const [columnIds, setColumnIds] = useState<string[]>([]);
 

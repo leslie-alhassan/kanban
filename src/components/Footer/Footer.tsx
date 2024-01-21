@@ -16,7 +16,7 @@ export const Footer = () => {
             target='_blank'
             className='text-xs'
           >
-            Made with 🩷 in Toronto
+            Made with 🩷 in Costa Rica!!!!! 🇨🇷
           </a>
         </Button>
       </div>
